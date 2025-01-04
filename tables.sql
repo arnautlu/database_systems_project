@@ -146,6 +146,7 @@ INSERT INTO "RoadAccidentsSeverity" VALUES
 	('18:30:00', 'Monday', 'Unknown', 'Female', 'Junior high school', 'Employee', '5-10yr', 'Pick up upto 10Q', 'Owner', '', 'No defect', 'Other', 'Undivided Two way', 'Tangent road with flat terrain', 'Y Shape', 'Asphalt roads', 'Wet or damp', 'Darkness - lights lit', 'Raining', 'Vehicle with vehicle collision', '1', '1', 'Going straight', 'na', 'na', 'na', 'na', 'Self-employed', 'Normal', 'Not a Pedestrian', 'No distancing', 'Slight Injury'),
 	('8:15:00', 'Wednesday', 'Over 51', 'Male', 'Junior high school', 'Employee', '2-5yr', 'Lorry (41?100Q)', 'Owner', '', 'No defect', 'Other', 'Undivided Two way', 'Tangent road with flat terrain', 'No junction', 'Asphalt roads', 'Dry', 'Daylight', 'Normal', 'Vehicle with vehicle collision', '1', '1', 'Going straight', 'na', 'na', 'na', 'na', 'Driver', 'Normal', 'Not a Pedestrian', 'Changing lane to the left', 'Slight Injury');
 
+select * from "RoadAccidentsSeverity";
 
 
 --drop TABLE "RoadAccidentsSeverity";
