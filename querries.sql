@@ -25,3 +25,7 @@ GROUP BY Location
 
 --Maximaler FactValueNumeric pro Dim1
 SELECT Dim1, MAX(FactValueNumeric) FROM roadsafety_db2 GROUP BY Dim1;
+
+select country1, country2
+from borders
+where length < 100;
