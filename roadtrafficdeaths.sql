@@ -35,5 +35,27 @@ CREATE TABLE "roadtrafficdeaths" (
     "DateModified"	VARCHAR(512)
 );
 
-INSERT INTO "roadtrafficdeaths"  VALUES
-	('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'WPR', 'Western Pacific', 'Country', 'NIU', 'Niue', 'Year', '2021', 'true', '', '', '', '', '', '', '', '', '', '', '', '', '0', '', '', '', '', '', '0', '', '', 'EN', '2024-04-14T22:00:00.000Z');
+INSERT INTO "roadtrafficdeaths" VALUES 
+(
+    'RS_196', 
+    'Estimated number of road traffic deaths', 
+    'numeric', 
+    'WPR', 
+    'Western Pacific', 
+    'Country', 
+    'NIU', 
+    'Niue', 
+    'Year', 
+    '2021', 
+    'true', 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    '0', 
+    0, 0, 0, 0, 0, 
+    '0', 
+    0, 0, 
+    'EN', 
+    '2024-04-14T22:00:00.000Z'
+);
+
+
+   drop TABLE "roadtrafficdeaths";
