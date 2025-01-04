@@ -44,3 +44,6 @@ CREATE TABLE "RoadAccidentsSeverity" (
 insert into "RoadAccidentsSeverity" values ('2018', 'Monday')
 
 select * from "RoadAccidentsSeverity";
+
+
+INSERT INTO "RoadAccidentsSeverity" VALUES ('17:02:00', 'Monday', '18-30', 'Male', 'Above high school', 'Employee', '1-2yr', 'Automobile', 'Owner', 'Above 10yr', 'No defect', 'Residential areas', '', 'Tangent road with flat terrain', 'No junction', 'Asphalt roads', 'Dry', 'Daylight', 'Normal', 'Collision with roadside-parked vehicles', '2', '2', 'Going straight', 'na', 'na', 'na', 'na', '', '', 'Not a Pedestrian', 'Moving Backward', 'Slight Injury');
