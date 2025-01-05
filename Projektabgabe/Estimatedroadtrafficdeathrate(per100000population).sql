@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS "Estimatedroadtrafficdeathrate(per100000population)";
 
 CREATE TABLE "Estimatedroadtrafficdeathrate(per100000population)" (
     "IndicatorCode"	VARCHAR(512),

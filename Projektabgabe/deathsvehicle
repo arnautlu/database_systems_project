@@ -34,7 +34,7 @@ CREATE TABLE "deathsvehicle" (
     "Language"	VARCHAR(512),
     "DateModified"	VARCHAR(512)
 );
-drop table "deathsvehicle";
+
 
 
 INSERT INTO "deathsvehicle" VALUES ('RS_246', 'Distribution of road traffic deaths by type of road user (%)', 'numeric', 'AFR', 'Africa', 'Country', 'AGO', 'Angola', 'Year', '2016', 'true', 'Road User Type', 'Other/unspecified road users', 'ROADUSERTYPE_RS-DDC-OTHER', '', '', '', '', '', '', '', '', '', '0', '', '', '', '', '', '0.0', '', '', 'EN', '2020-04-22T22:00:00.000Z');

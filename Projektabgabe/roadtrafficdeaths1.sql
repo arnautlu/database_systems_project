@@ -35,8 +35,6 @@ CREATE TABLE "roadtrafficdeaths1" (
     "DateModified" VARCHAR(512)
 );
 
-DROP TABLE "roadtrafficdeaths1";
-
 INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'WPR', 'Western Pacific', 'Country', 'NIU', 'Niue', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
 INSERT INTO "roadtrafficdeaths1" VALUES
