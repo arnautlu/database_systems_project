@@ -77,7 +77,12 @@ INSERT INTO "roadtrafficdeaths" VALUES
 
 INSERT INTO "roadtrafficdeaths" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'AFR', 'Africa', 'Country', 'ZAF', 'South Africa', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '14528', '0', '0', '12983', '0', '16073', '14 528 [12 983-16 073]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
+
+
 --bis hier drin
+
+
+
 INSERT INTO "roadtrafficdeaths" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'AFR', 'Africa', 'Country', 'KEN', 'Kenya', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '14926', '0', '0', '13002', '0', '16851', '14 926 [13 002-16 851]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
 
