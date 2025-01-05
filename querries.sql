@@ -33,3 +33,8 @@ where length < 100;
 select
 
 
+SELECT Country, DeathCount
+FROM roadtrafficdeaths1.sql
+WHERE Year = 2021
+ORDER BY DeathCount DESC
+LIMIT 10;
