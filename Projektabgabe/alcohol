@@ -217,7 +217,3 @@ INSERT INTO "alcohol" VALUES
 	('RS_208', 'Attribution of road traffic deaths to alcohol (%)', 'numeric', 'EUR', 'Europe', 'Country', 'MDA', 'Republic of Moldova', 'Year', '2017', 'true', '', '', '', '', '', '', '', '', '', '', '', '', '9.4', '', '', '', '', '', '9.4', '', '', 'EN', '2020-06-04T22:00:00.000Z'),
 	('RS_208', 'Attribution of road traffic deaths to alcohol (%)', 'numeric', 'EUR', 'Europe', 'Country', 'CZE', 'Czechia', 'Year', '2017', 'true', '', '', '', '', '', '', '', '', '', '', '', '', '9.5', '', '', '', '', '', '9.5', '', '', 'EN', '2020-06-04T22:00:00.000Z'),
 	('RS_208', 'Attribution of road traffic deaths to alcohol (%)', 'numeric', 'EUR', 'Europe', 'Country', 'LTU', 'Lithuania', 'Year', '2017', 'true', '', '', '', '', '', '', '', '', '', '', '', '', '9.6', '', '', '', '', '', '9.6', '', '', 'EN', '2020-06-04T22:00:00.000Z');
-
-
-	SELECT * FROM alcohol;
-	
