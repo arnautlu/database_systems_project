@@ -1,39 +1,41 @@
 CREATE TABLE "roadtrafficdeaths1" (
-    "IndicatorCode"	VARCHAR(512),
-    "Indicator"	VARCHAR(512),
-    "ValueType"	VARCHAR(512),
-    "ParentLocationCode"	VARCHAR(512),
-    "ParentLocation"	VARCHAR(512),
-    "Location type"	VARCHAR(512),
-    "SpatialDimValueCode"	VARCHAR(512),
-    "Location"	VARCHAR(512),
-    "Period type"	VARCHAR(512),
-    "Period"	INT,
-    "IsLatestYear"	VARCHAR(512),
-    "Dim1 type"	VARCHAR(512),
-    "Dim1"	VARCHAR(512),
-    "Dim1ValueCode"	VARCHAR(512),
-    "Dim2 type"	VARCHAR(512),
-    "Dim2"	VARCHAR(512),
-    "Dim2ValueCode"	VARCHAR(512),
-    "Dim3 type"	VARCHAR(512),
-    "Dim3"	VARCHAR(512),
-    "Dim3ValueCode"	VARCHAR(512),
-    "DataSourceDimValueCode"	VARCHAR(512),
-    "DataSource"	VARCHAR(512),
-    "FactValueNumericPrefix"	VARCHAR(512),
-    "FactValueNumeric"	INT,
-    "FactValueUoM"	VARCHAR(512),
-    "FactValueNumericLowPrefix"	VARCHAR(512),
-    "FactValueNumericLow"	INT,
-    "FactValueNumericHighPrefix"	VARCHAR(512),
-    "FactValueNumericHigh"	INT,
-    "Value"	VARCHAR(512),
-    "FactValueTranslationID"	VARCHAR(512),
-    "FactComments"	VARCHAR(512),
-    "Language"	VARCHAR(512),
-    "DateModified"	VARCHAR(512)
+    "IndicatorCode" VARCHAR(512),
+    "Indicator" VARCHAR(512),
+    "ValueType" VARCHAR(512),
+    "ParentLocationCode" VARCHAR(512),
+    "ParentLocation" VARCHAR(512),
+    "Location type" VARCHAR(512),
+    "SpatialDimValueCode" VARCHAR(512),
+    "Location" VARCHAR(512),
+    "Period type" VARCHAR(512),
+    "Period" INT,
+    "IsLatestYear" VARCHAR(512),
+    "Dim1 type" VARCHAR(512),
+    "Dim1" VARCHAR(512),
+    "Dim1ValueCode" VARCHAR(512),
+    "Dim2 type" VARCHAR(512),
+    "Dim2" VARCHAR(512),
+    "Dim2ValueCode" VARCHAR(512),
+    "Dim3 type" VARCHAR(512),
+    "Dim3" VARCHAR(512),
+    "Dim3ValueCode" VARCHAR(512),
+    "DataSourceDimValueCode" VARCHAR(512),
+    "DataSource" VARCHAR(512),
+    "FactValueNumericPrefix" VARCHAR(512),
+    "FactValueNumeric" INT,
+    "FactValueUoM" VARCHAR(512),
+    "FactValueNumericLowPrefix" VARCHAR(512),
+    "FactValueNumericLow" INT,
+    "FactValueNumericHighPrefix" VARCHAR(512),
+    "FactValueNumericHigh" INT,
+    "Value" VARCHAR(512),
+    "FactValueTranslationID" VARCHAR(512),
+    "FactComments" VARCHAR(512),
+    "Language" VARCHAR(512),
+    "DateModified" VARCHAR(512)
 );
+
+DROP TABLE "roadtrafficdeaths1";
 
 INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'WPR', 'Western Pacific', 'Country', 'NIU', 'Niue', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
@@ -41,7 +43,7 @@ INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'EUR', 'Europe', 'Country', 'MCO', 'Monaco', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0 [0-1]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
 INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'WPR', 'Western Pacific', 'Country', 'NRU', 'Nauru', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '1', '0', '1', '1 [1-1]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
-INSERT INTO "roadtrafficdeaths1" VALUE
+INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'EUR', 'Europe', 'Country', 'MLT', 'Malta', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '10', '0', '0', '8', '0', '12', '10 [8-12]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
 INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'AFR', 'Africa', 'Country', 'TZA', 'United Republic of Tanzania', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '10052', '0', '0', '8246', '0', '11858', '10 052 [8246-11 858]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
@@ -381,7 +383,7 @@ INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'AFR', 'Africa', 'Country', 'LSO', 'Lesotho', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '492', '0', '0', '426', '0', '558', '492 [426-558]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
 
 INSERT INTO "roadtrafficdeaths1" VALUES
-    ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'EMR', 'Eastern Mediterranean', 'Country', 'OMN', 'Oman', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '497', '0', '0', '433', '0', '560', '497 [433-560]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
+    ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'EMR', 'Eastern Mediterranean', 'Country', 'OMN', 'Oman', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '497', '0', '0', '433', '0', '560', '497 [433-560]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
 
 INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'WPR', 'Western Pacific', 'Country', 'MHL', 'Marshall Islands', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '5', '0', '0', '5', '0', '6', '5 [5-6]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
@@ -423,7 +425,7 @@ INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'AFR', 'Africa', 'Country', 'NAM', 'Namibia', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '557', '0', '0', '488', '0', '625', '557 [488-625]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
 
 INSERT INTO "roadtrafficdeaths1" VALUES
-    ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'AFR', 'Africa', 'Country', 'CIV', 'Cote d\'Ivoire', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '5670', '0', '0', '4883', '0', '6456', '5670 [4883-6456]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
+    ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'AFR', 'Africa', 'Country', 'CIV', 'Cote d\Ivoire', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '5670', '0', '0', '4883', '0', '6456', '5670 [4883-6456]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
 
 INSERT INTO "roadtrafficdeaths1" VALUES
     ('RS_196', 'Estimated number of road traffic deaths', 'numeric', 'EUR', 'Europe', 'Country', 'MNE', 'Montenegro', 'Year', '2021', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '57', '0', '0', '54', '0', '60', '57 [54-60]', '0', '0', 'EN', '2024-04-14T22:00:00.000Z');
