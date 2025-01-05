@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS "Estimatedroadtrafficdeathrate(per100000population)";
 
 CREATE TABLE "Estimatedroadtrafficdeathrate(per100000population)" (
     "IndicatorCode"	VARCHAR(512),
@@ -24,13 +23,13 @@ CREATE TABLE "Estimatedroadtrafficdeathrate(per100000population)" (
     "DataSourceDimValueCode"	VARCHAR(512),
     "DataSource"	VARCHAR(512),
     "FactValueNumericPrefix"	VARCHAR(512),
-    "FactValueNumeric"	DOUBLE,
+    "FactValueNumeric"	FLOAT,
     "FactValueUoM"	VARCHAR(512),
     "FactValueNumericLowPrefix"	VARCHAR(512),
     "FactValueNumericLow"	VARCHAR(512),
     "FactValueNumericHighPrefix"	VARCHAR(512),
     "FactValueNumericHigh"	VARCHAR(512),
-    "Value"	DOUBLE,
+    "Value"	FLOAT,
     "FactValueTranslationID"	VARCHAR(512),
     "FactComments"	VARCHAR(512),
     "Language"	VARCHAR(512),

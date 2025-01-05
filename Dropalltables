@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS "Estimatedroadtrafficdeathrate(per100000population)";
+DROP TABLE IF EXISTS "alcohol";
+DROP TABLE IF EXISTS "RoadAccidentsSeverity";
+
+DROP TABLE IF EXISTS "roadtrafficdeaths1";
+DROP TABLE IF EXISTS "deathsvehicle";
