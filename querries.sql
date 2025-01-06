@@ -46,3 +46,9 @@ GROUP BY "Sex_of_driver", "Sex_of_casualty";
 
 select "Location"
 from alcohol;
+
+SELECT Country, DeathCount
+FROM roadtrafficdeaths1.sql
+WHERE Year = 2021
+ORDER BY DeathCount DESC
+LIMIT 10;
