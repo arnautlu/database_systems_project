@@ -127,10 +127,10 @@ LIMIT 10;
 -- Chati Story queries--
     
 --1. Gesamtzahl der geschätzten Verkehrstoten weltweit pro Jahr--
-    SELECT Period AS Year, SUM(Value) AS TotalDeaths
-FROM roadtrafficdeaths1
-GROUP BY Period
-ORDER BY Year;
+    SELECT"Period"AS Year, SUM("Value")AS TotalDeaths
+FROM"roadtrafficdeaths1"
+GROUP BY"Period"
+ORDER BY"Year";
 
 --2. Zusammenhang zwischen Verkehrstoten und Bildungsgrad--
 SELECT Educational_level AS Education, COUNT(*) AS TotalAccidents
