@@ -33,8 +33,16 @@
 -- select
 
 
-SELECT Country, DeathCount
-FROM roadtrafficdeaths1.sql
-WHERE Year = 2021
-ORDER BY DeathCount DESC
-LIMIT 10;
+
+--Abfragen für das Projekt
+
+--1. Welches Geschlecht ist der gefährlichere Fahrer?
+SELECT "Sex_of_driver", "Sex_of_casualty", COUNT(*) AS count
+FROM "RoadAccidentsSeverity"
+WHERE "Sex_of_driver" NOT IN ('Unknown', 'na')
+AND "Sex_of_casualty" NOT IN ('Unknown', 'na')
+GROUP BY "Sex_of_driver", "Sex_of_casualty";
+
+
+select "Location"
+from alcohol;
