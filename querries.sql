@@ -50,6 +50,22 @@ WHERE "Educational_level" NOT IN ('') AND "Age_band_of_driver" NOT IN ('Unknown'
 GROUP BY "Educational_level", "Age_band_of_driver"
 ORDER BY count DESC;
 
+
+--3. Welche Länder haben die meisten Verkehrunfälle die durch Alkohol verursacht wurden?
+SELECT 
+    g."Country",
+    SUM(g."Injuries") AS TotalInjuries,
+    SUM(g."Fatalities") AS TotalFatalities
+FROM 
+    "GlobalTrafficAccidentsandRoadSafety" g
+JOIN 
+    "alcohol" a ON g."Country" = a."Location"
+GROUP BY 
+    g."Country"
+ORDER BY 
+    TotalFatalities DESC, TotalInjuries DESC;
+
+
 SELECT *
 FROM "RoadAccidentsSeverity";
 
