@@ -123,3 +123,94 @@ FROM roadtrafficdeaths1.sql
 WHERE Year = 2021
 ORDER BY DeathCount DESC
 LIMIT 10;
+
+-- Chati Story queries--
+    
+--1. Gesamtzahl der geschätzten Verkehrstoten weltweit pro Jahr--
+    SELECT Period AS Year, SUM(Value) AS TotalDeaths
+FROM roadtrafficdeaths1
+GROUP BY Period
+ORDER BY Year;
+
+--2. Zusammenhang zwischen Verkehrstoten und Bildungsgrad--
+SELECT Educational_level AS Education, COUNT(*) AS TotalAccidents
+FROM RoadAccidentsSeverity
+GROUP BY Educational_level
+ORDER BY TotalAccidents DESC;
+
+--3. Verkehrstotenrate pro 100.000 Einwohner in den letzten verfügbaren Daten--
+SELECT AVG(Value) AS AvgDeathRatePer100k
+FROM Estimatedroadtrafficdeathrate
+WHERE Period = 2021;
+
+--4. Einfluss der Wetterbedingungen auf Unfallhäufigkeit--
+
+SELECT Weather_conditions AS Weather, COUNT(*) AS TotalAccidents
+FROM RoadAccidentsSeverity
+GROUP BY Weather
+ORDER BY TotalAccidents DESC;
+
+--5. Verteilung der Verkehrstoten nach Art der Verkehrsteilnehmer--
+SELECT Dim1 AS RoadUserType, SUM(Value) AS TotalDeaths
+FROM deathsvehicle
+GROUP BY RoadUserType
+ORDER BY TotalDeaths DESC;
+
+--6. Zusammenhang zwischen Alkohol und Verkehrstoten--
+
+SELECT a.Location AS Country, 
+       r.Value AS TotalDeaths, 
+       a.Value AS AlcoholRelatedDeaths, 
+       ROUND((a.Value::FLOAT / r.Value) * 100, 2) AS AlcoholPercentage
+FROM Alcohol a
+JOIN roadtrafficdeaths1 r ON a.Location = r.Location AND a.Period = r.Period
+WHERE a.Period = 2017
+ORDER BY AlcoholPercentage DESC;
+
+--7. Zusammenhang zwischen Unfallursachen und Unfallschwere--
+
+SELECT Cause_of_accident AS Cause, Accident_severity AS Severity, COUNT(*) AS TotalAccidents
+FROM RoadAccidentsSeverity
+GROUP BY Cause, Severity
+ORDER BY TotalAccidents DESC;
+
+--8. Korrelation zwischen Verkehrstoten und Bildungsgrad der Fahrer--
+
+SELECT r.Location AS Country, 
+       r.Value AS TotalDeaths, 
+       e.Educational_level AS Education, 
+       COUNT(*) AS Accidents
+FROM roadtrafficdeaths1 r
+JOIN RoadAccidentsSeverity e ON r.Location = e.Area_accident_occured
+GROUP BY Country, TotalDeaths, Education
+ORDER BY TotalDeaths DESC;
+
+--9. Vergleich von Unfällen mit schlechter Straßenoberfläche---
+SELECT Road_surface_conditions AS RoadCondition, COUNT(*) AS TotalAccidents
+FROM RoadAccidentsSeverity
+WHERE RoadCondition IN ('Wet', 'Poor', 'Damaged')
+GROUP BY RoadCondition
+ORDER BY TotalAccidents DESC;
+
+--10. Vorhersage der Verkehrstoten für das nächste Jahr basierend auf Trends--
+
+SELECT Country, Year, DeathCount,
+       DeathCount + (DeathCount - LAG(DeathCount) OVER (PARTITION BY Country ORDER BY Year)) AS PredictedNextYear
+FROM (
+    SELECT Location AS Country, Period AS Year, SUM(Value) AS DeathCount
+    FROM roadtrafficdeaths1
+    GROUP BY Country, Year
+) AS subquery;
+
+--Story Erklärung: Einleitung (Allgemeiner Überblick):Beginne mit den weltweiten Zahlen (Query 1).
+-- Gehe auf den Einfluss des Bildungsgrades ein (Query 2).
+-- Zeige die durchschnittliche Todesrate pro 100.000 Einwohner (Query 3).
+-- Wende dich Wetterbedingungen zu (Query 4).
+-- Schließe die Einleitung mit der Verteilung nach Verkehrsteilnehmern (Query 5).
+-- Hauptteil (Tiefe Analysen):
+
+-- Analysiere Alkohol als Unfallfaktor (Query 6).
+-- Zeige Unfallursachen und deren Schweregrad (Query 7).
+-- Untersuche die Korrelation zwischen Bildungsgrad und Verkehrstoten (Query 8).
+-- Wende dich spezifischen Unfallbedingungen zu, z. B. schlechten Straßen (Query 9).
+-- Schließe mit einer Vorhersage der Verkehrstoten basierend auf Trends (Query 10). --
