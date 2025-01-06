@@ -43,6 +43,16 @@ WHERE "Sex_of_driver" NOT IN ('Unknown', 'na')
 AND "Sex_of_casualty" NOT IN ('Unknown', 'na')
 GROUP BY "Sex_of_driver", "Sex_of_casualty";
 
+--2. Welche Altersgruppe ist am häufigsten in Unfälle verwickelt? Spielt das Bildungslevel dabei ein Rolle?
+SELECT "Educational_level", "Age_band_of_driver", COUNT(*) AS count
+FROM "RoadAccidentsSeverity"
+WHERE "Educational_level" NOT IN ('') AND "Age_band_of_driver" NOT IN ('Unknown', '')
+GROUP BY "Educational_level", "Age_band_of_driver"
+ORDER BY count DESC;
+
+SELECT *
+FROM "RoadAccidentsSeverity";
+
 
 select "Location"
 from alcohol;
