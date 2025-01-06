@@ -1,37 +1,77 @@
---Einträge mit FactValueNumeric größer als ein bestimmter Wert (z.B. 1000):
-SELECT * 
-FROM roadsafety_db2 
-WHERE FactValueNumeric > 1000;
+-- --Einträge mit FactValueNumeric größer als ein bestimmter Wert (z.B. 1000):
+-- SELECT * 
+-- FROM roadsafety_db2 
+-- WHERE FactValueNumeric > 1000;
 
---Einträge mit einem bestimmten Indicator (z.B. "Road Accidents") -> Indikator wählen
-SELECT * 
-FROM roadsafety_db2 
-WHERE Indicator = 'Road Accidents';
+-- --Einträge mit einem bestimmten Indicator (z.B. "Road Accidents") -> Indikator wählen
+-- SELECT * 
+-- FROM roadsafety_db2 
+-- WHERE Indicator = 'Road Accidents';
 
---Anzahl der Einträge pro Location:
-SELECT Location, COUNT(*) 
-FROM roadsafety_db2 
-GROUP BY Location
+-- --Anzahl der Einträge pro Location:
+-- SELECT Location, COUNT(*) 
+-- FROM roadsafety_db2 
+-- GROUP BY Location
 
---Durchschnittlicher FactValueNumeric pro Location
-SELECT Location, AVG(FactValueNumeric) 
-FROM roadsafety_db2 
-GROUP BY Location;
+-- --Durchschnittlicher FactValueNumeric pro Location
+-- SELECT Location, AVG(FactValueNumeric) 
+-- FROM roadsafety_db2 
+-- GROUP BY Location;
 
---Maximaler FactValueNumeric pro Location:
-SELECT Location, MAX(FactValueNumeric) 
-FROM roadsafety_db2 
-GROUP BY Location
+-- --Maximaler FactValueNumeric pro Location:
+-- SELECT Location, MAX(FactValueNumeric) 
+-- FROM roadsafety_db2 
+-- GROUP BY Location
 
---Maximaler FactValueNumeric pro Dim1
-SELECT Dim1, MAX(FactValueNumeric) FROM roadsafety_db2 GROUP BY Dim1;
+-- --Maximaler FactValueNumeric pro Dim1
+-- SELECT Dim1, MAX(FactValueNumeric) FROM roadsafety_db2 GROUP BY Dim1;
 
-select country1, country2
-from borders
-where length < 100;
+-- select country1, country2
+-- from borders
+-- where length < 100;
 
-select
+-- select
 
+
+
+--Abfragen für das Projekt
+
+--1. Welches Geschlecht ist der gefährlichere Fahrer?
+SELECT "Sex_of_driver", "Sex_of_casualty", COUNT(*) AS count
+FROM "RoadAccidentsSeverity"
+WHERE "Sex_of_driver" NOT IN ('Unknown', 'na')
+AND "Sex_of_casualty" NOT IN ('Unknown', 'na')
+GROUP BY "Sex_of_driver", "Sex_of_casualty";
+
+--2. Welche Altersgruppe ist am häufigsten in Unfälle verwickelt? Spielt das Bildungslevel dabei ein Rolle?
+SELECT "Educational_level", "Age_band_of_driver", COUNT(*) AS count
+FROM "RoadAccidentsSeverity"
+WHERE "Educational_level" NOT IN ('') AND "Age_band_of_driver" NOT IN ('Unknown', '')
+GROUP BY "Educational_level", "Age_band_of_driver"
+ORDER BY count DESC;
+
+
+--3. Welche Länder haben die meisten Verkehrunfälle die durch Alkohol verursacht wurden?
+SELECT 
+    g."Country",
+    SUM(g."Injuries") AS TotalInjuries,
+    SUM(g."Fatalities") AS TotalFatalities
+FROM 
+    "GlobalTrafficAccidentsandRoadSafety" g
+JOIN 
+    "alcohol" a ON g."Country" = a."Location"
+GROUP BY 
+    g."Country"
+ORDER BY 
+    TotalFatalities DESC, TotalInjuries DESC;
+
+
+SELECT *
+FROM "RoadAccidentsSeverity";
+
+
+select "Location"
+from alcohol;
 
 SELECT Country, DeathCount
 FROM roadtrafficdeaths1.sql
