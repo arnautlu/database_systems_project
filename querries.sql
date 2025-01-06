@@ -106,6 +106,14 @@ GROUP BY
 ORDER BY 
     AvgEstimatedDeathRatehochgerechnet DESC;
 
+-- 7. In welchen Ländern gibt es die meisten Verkehrstoten?
+SELECT "Location", SUM("Value") AS total_vehicle_deaths
+FROM "deathsvehicle"
+GROUP BY "Location"
+ORDER BY total_vehicle_deaths DESC;
+
+--8. 
+
  
 
 
