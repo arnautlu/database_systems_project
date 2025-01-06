@@ -92,7 +92,7 @@ GROUP BY
 ORDER BY 
     accident_count DESC;
 
---6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population? -> hochrrechnen notwendig
+--6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population? -> hochrrechnen notwendig + ordnen danach in welchen spalten die werte am nächsten liegen
 SELECT 
     e."Location",
     AVG(e."Value") AS AvgEstimatedDeathRatehochgerechnet,
