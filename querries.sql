@@ -66,8 +66,53 @@ ORDER BY
     TotalFatalities DESC, TotalInjuries DESC;
 
 
+--4. Spielen Lichtverhätnisse eine Rolle bei Roadaccidents?
+SELECT 
+    "Light_conditions", 
+    COUNT(*) AS accident_count
+FROM 
+    "RoadAccidentsSeverity"
+WHERE 
+    "Light_conditions" NOT IN ('Unknown', 'na')
+GROUP BY 
+    "Light_conditions"
+ORDER BY 
+    accident_count DESC;
+
+--5. Welche Fahrzeuge die ... fahren sollte man vermeiden?
+SELECT 
+    "Vehicle_movement", 
+    COUNT(*) AS accident_count
+FROM 
+    "RoadAccidentsSeverity"
+WHERE 
+    "Vehicle_movement" NOT IN ('Unknown', 'na')
+GROUP BY 
+    "Vehicle_movement"
+ORDER BY 
+    accident_count DESC;
+
+--6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population? -> hochrrechnen notwendig
+SELECT 
+    e."Location",
+    AVG(e."Value") AS AvgEstimatedDeathRatehochgerechnet,
+    SUM(r."FactValueNumeric") AS TotalActualDeaths
+FROM 
+    "Estimatedroadtrafficdeathrate(per100000population)" e
+JOIN 
+    "roadtrafficdeaths1" r ON e."Location" = r."Location"
+GROUP BY 
+    e."Location"
+ORDER BY 
+    AvgEstimatedDeathRatehochgerechnet DESC;
+
+ 
+
+
+
+
 SELECT *
-FROM "RoadAccidentsSeverity";
+FROM "Estimatedroadtrafficdeathrate(per100000population)";
 
 
 select "Location"
