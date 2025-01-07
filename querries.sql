@@ -163,14 +163,51 @@ GROUP BY
 ORDER BY 
     AccidentCount DESC;
 
---12. 
+--12. In welchen Ländern gibt es die meisten Fahrzeugtote?
+SELECT 
+    "Location"
+FROM (
+    SELECT 
+        "Location",
+        COUNT(*) AS DeathCount
+    FROM 
+        "deathsvehicle"
+    GROUP BY 
+        "Location"
+    ORDER BY 
+        DeathCount DESC
+    LIMIT 5
+) AS subquery;
 
+--13. Welcher Wochentag ist für welche Altersgruppe am gefährlichsten?
+WITH RankedEntries AS (
+    SELECT 
+        "Age_band_of_driver",
+        "Day_of_week",
+        COUNT(*) AS EntryCount,
+        ROW_NUMBER() OVER (PARTITION BY "Age_band_of_driver" ORDER BY COUNT(*) DESC) AS rn
+    FROM 
+        "RoadAccidentsSeverity"
+    WHERE 
+        "Age_band_of_driver" <> 'Unknown'
+    GROUP BY 
+        "Age_band_of_driver", "Day_of_week"
+)
+SELECT 
+    "Age_band_of_driver",
+    "Day_of_week"
+FROM 
+    RankedEntries
+WHERE 
+    rn = 1
+ORDER BY 
+    "Age_band_of_driver";
 
---13. 
+--14. 
 
 
 select *
-from "river";
+from "deathsvehicle";
 
 
 
