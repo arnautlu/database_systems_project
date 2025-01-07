@@ -203,11 +203,23 @@ WHERE
 ORDER BY 
     "Age_band_of_driver";
 
---14. 
+--14. In welchen Gebieten einer Stadt werden die meisten Unfälle verursacht?
+SELECT 
+    "Area_accident_occured",
+    COUNT(*) AS AccidentCount
+FROM 
+    "RoadAccidentsSeverity"
+WHERE 
+    "Area_accident_occured" <> 'Other'
+GROUP BY 
+    "Area_accident_occured"
+ORDER BY 
+    AccidentCount DESC
+LIMIT 3;
 
 
 select *
-from "deathsvehicle";
+from "RoadAccidentsSeverity";
 
 
 
