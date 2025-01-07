@@ -157,6 +157,24 @@ ORDER BY
 --12. haben Unfälle die durch
 
 --13. Gibt es mehr Unfälle in Ländern in denen es mehr Flüsse gibt?
+SELECT 
+    g."Country",
+    COUNT(g."Accidents Reported") AS TotalAccidents,
+    CASE 
+        WHEN l."country" IS NOT NULL THEN 'With Rivers'
+        ELSE 'Without Rivers'
+    END AS RiverPresence
+FROM 
+    "GlobalTrafficAccidentsandRoadSafety" g
+LEFT JOIN 
+    "geo_lake" l ON g."Country" = l."country"
+GROUP BY 
+    g."Country", RiverPresence
+ORDER BY 
+    TotalAccidents DESC;
+
+select *
+from "river";
 
 
 
