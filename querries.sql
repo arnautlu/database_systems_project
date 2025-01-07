@@ -112,15 +112,60 @@ FROM "deathsvehicle"
 GROUP BY "Location"
 ORDER BY total_vehicle_deaths DESC;
 
---8. 
+--8. Wo werden am haufugsten Fahrradfahrer verletzt?
+SELECT 
+    "Country",
+    SUM("Injuries") AS TotalInjuries
+FROM 
+    "GlobalTrafficAccidentsandRoadSafety"
+WHERE 
+    "Accident Type" = 'Cyclist'
+GROUP BY 
+    "Country", "Accident Type"
+ORDER BY 
+    TotalInjuries DESC;
+
+--9. Stehen diese (siehe 8.) in einem Zusammenhang mit Fahrradtoten? Ist es möglcih eine Ration zu schätzen
+SELECT 
+    "Country",
+    SUM("Fatalities") AS TotalFatalities
+FROM 
+    "GlobalTrafficAccidentsandRoadSafety"
+WHERE 
+    "Accident Type" = 'Cyclist'
+GROUP BY 
+    "Country", "Accident Type"
+ORDER BY 
+    TotalFatalities DESC;
+
+--10. Hat die Einwohnerzahl eines Landes Einfluss auf die Anzahl an
+
+--11. Sind Regierungsmitglieder bessere Fahrer?
+SELECT 
+    CASE 
+        WHEN "Owner_of_vehicle" = 'Governmental' THEN 'Governmental'
+        ELSE 'Other'
+    END AS OwnershipType,
+    COUNT(*) AS AccidentCount
+FROM 
+    "RoadAccidentsSeverity"
+GROUP BY 
+    OwnershipType
+ORDER BY 
+    AccidentCount DESC;
+
+--12.
+
 
  
 
 
+select *
+from "RoadAccidentsSeverity";
 
-
-SELECT *
-FROM "Estimatedroadtrafficdeathrate(per100000population)";
+SELECT "Fatalities", "Injuries"
+FROM "GlobalTrafficAccidentsandRoadSafety"
+where "Country" = 'United States of America';
 
 
 select "Location"
