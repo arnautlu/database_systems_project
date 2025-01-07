@@ -138,7 +138,16 @@ GROUP BY
 ORDER BY 
     TotalFatalities DESC;
 
---10. Hat die Einwohnerzahl eines Landes Einfluss auf die Anzahl an
+--10. Welche Masßnahmen mussten am meisten eingesetzt werden?
+SELECT 
+    "Road Safety Measures",
+    COUNT(*) AS UsageCount
+FROM 
+    "GlobalTrafficAccidentsandRoadSafety"
+GROUP BY 
+    "Road Safety Measures"
+ORDER BY 
+    UsageCount DESC;
 
 --11. Sind Regierungsmitglieder bessere Fahrer?
 SELECT 
@@ -154,24 +163,11 @@ GROUP BY
 ORDER BY 
     AccidentCount DESC;
 
---12. haben Unfälle die durch
+--12. 
 
---13. Gibt es mehr Unfälle in Ländern in denen es mehr Flüsse gibt?
-SELECT 
-    g."Country",
-    COUNT(g."Accidents Reported") AS TotalAccidents,
-    CASE 
-        WHEN l."country" IS NOT NULL THEN 'With Rivers'
-        ELSE 'Without Rivers'
-    END AS RiverPresence
-FROM 
-    "GlobalTrafficAccidentsandRoadSafety" g
-LEFT JOIN 
-    "geo_lake" l ON g."Country" = l."country"
-GROUP BY 
-    g."Country", RiverPresence
-ORDER BY 
-    TotalAccidents DESC;
+
+--13. 
+
 
 select *
 from "river";
