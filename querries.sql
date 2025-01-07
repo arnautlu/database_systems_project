@@ -156,7 +156,7 @@ ORDER BY
 
 --12. haben Unfälle die durch
 
---13. Sind Männer oder Frauen die besseren Fahrer
+--13. Gibt es mehr Unfälle in Ländern in denen es mehr Flüsse gibt?
 
 
 
@@ -164,7 +164,7 @@ ORDER BY
 
 
 select *
-from "RoadAccidentsSeverity";
+from "deathsvehicle";
 
 SELECT "Fatalities", "Injuries"
 FROM "GlobalTrafficAccidentsandRoadSafety"
