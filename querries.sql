@@ -154,7 +154,7 @@ GROUP BY
 ORDER BY 
     AccidentCount DESC;
 
---12.
+--12. haben Unfälle die durch
 
 
  
