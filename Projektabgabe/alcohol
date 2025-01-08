@@ -35,6 +35,8 @@ CREATE TABLE "alcohol" (
     "DateModified"	VARCHAR(512)
 );
 
+		SELECT * FROM "alcohol";
+
 INSERT INTO "alcohol" VALUES
 	('RS_208', 'Attribution of road traffic deaths to alcohol (%)', 'numeric', 'EMR', 'Eastern Mediterranean', 'Country', 'AFG', 'Afghanistan', 'Year', '2017', 'true', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'EN', '2020-06-04T22:00:00.000Z'),
 	('RS_208', 'Attribution of road traffic deaths to alcohol (%)', 'numeric', 'AFR', 'Africa', 'Country', 'AGO', 'Angola', 'Year', '2017', 'true', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'EN', '2020-06-04T22:00:00.000Z'),
