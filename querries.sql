@@ -237,7 +237,7 @@ JOIN
 JOIN 
     "country" c ON e."country" = c."code"
 WHERE 
-    e."unemployment" IS NOT NULL
+    e."gdp" IS NOT NULL
 GROUP BY 
     e."country", c."name", e."unemployment"
 ORDER BY 
@@ -275,8 +275,6 @@ JOIN
     "roadtrafficdeaths1" r ON e."country" = r."SpatialDimValueCode"
 JOIN 
     "country" c ON e."country" = c."code"
-WHERE 
-    e."unemployment" IS NOT NULL
 GROUP BY 
     e."country", c."name", e."unemployment"
 ORDER BY 
@@ -291,47 +289,58 @@ from "desert";
     from "RoadAccidentsSeverity";
 
 
---20.
-select *
-from "economy";
+--20. gibt es mehr Unfälle in Ländern mit Seen?
+SELECT 
+    c."name" AS "Country",
+    COUNT(e."lake") AS "Number of lakes",
+    SUM(r."FactValueNumeric") AS "Amount of deaths"
+FROM 
+    "geo_lake" e
+JOIN 
+    "roadtrafficdeaths1" r ON e."country" = r."SpatialDimValueCode"
+JOIN 
+    "country" c ON e."country" = c."code"
+GROUP BY 
+    e."country", c."name"
+ORDER BY 
+    "Number of lakes" DESC;
+
+
+--21. Wie viele Menschen sterben pro See durch Verkehrsunfälle
+SELECT 
+    c."name" AS "Country",
+    (SUM(r."FactValueNumeric")/COUNT(e."lake")) AS "Road deaths per lake"
+FROM 
+    "geo_lake" e
+JOIN 
+    "roadtrafficdeaths1" r ON e."country" = r."SpatialDimValueCode"
+JOIN 
+    "country" c ON e."country" = c."code"
+GROUP BY 
+    e."country", c."name"
+ORDER BY 
+    "Road deaths per lake" DESC;
 
 
 
---21. 
+------------------------------------------------------------------------------------------------
+-- select*
+-- from "country";
+
+-- select*
+-- from "politics"
+-- LIMIT 1;
+
+-- select *
+-- from"roadtrafficdeaths1"
+-- LIMIT 1;
+
+-- select *
+-- from "RoadAccidentsSeverity";
+
+-- select *
+-- from "deathsvehicle";
 
 
-
-
-
-
-
-
-select*
-from "country";
-
-select*
-from "politics"
-LIMIT 1;
-
-select *
-from"roadtrafficdeaths1"
-LIMIT 1;
-
-
-
-select *
-from "RoadAccidentsSeverity";
-
-
-
- 
-
-
-select *
-from "deathsvehicle";
-
-SELECT "Fatalities", "Injuries"
-FROM "GlobalTrafficAccidentsandRoadSafety"
-where "Country" = 'United States of America';
 
 
