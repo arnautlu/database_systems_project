@@ -95,16 +95,19 @@ ORDER BY
 --6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population? -> hochrrechnen notwendig + ordnen danach in welchen spalten die werte am nächsten liegen
 SELECT 
     e."Location",
-    AVG(e."Value") AS AvgEstimatedDeathRatehochgerechnet,
+   ( AVG(e."Value")/100000) * c."population" AS AvgEstimatedDeathRatehochgerechnet,
     SUM(r."FactValueNumeric") AS TotalActualDeaths
 FROM 
     "Estimatedroadtrafficdeathrate(per100000population)" e
 JOIN 
     "roadtrafficdeaths1" r ON e."Location" = r."Location"
+JOIN
+    "country" c ON c."code" = e."SpatialDimValueCode"
 GROUP BY 
-    e."Location"
+    e."Location", c."population"
 ORDER BY 
     AvgEstimatedDeathRatehochgerechnet DESC;
+
 
 -- 7. In welchen Ländern gibt es die meisten Verkehrstoten?
 SELECT "Location", SUM("Value") AS total_vehicle_deaths
@@ -216,6 +219,14 @@ GROUP BY
 ORDER BY 
     AccidentCount DESC
 LIMIT 3;
+
+
+
+
+
+select*
+from "countrypops";
+
 
 
 select *
