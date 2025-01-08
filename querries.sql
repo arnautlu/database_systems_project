@@ -350,4 +350,7 @@ FROM (
 -- Hauptteil (Tiefe Analysen):
 
 -- Analysiere Alkohol als Unfallfaktor (Query 6).
--- Zeige Unfallursachen und deren S
+-- Zeige Unfallursachen und deren Schweregrad (Query 7).
+-- Untersuche die Korrelation zwischen Bildungsgrad und Verkehrstoten (Query 8).
+-- Wende dich spezifischen Unfallbedingungen zu, z. B. schlechten Straßen (Query 9).
+-- Schließe mit einer Vorhersage der Verkehrstoten basierend auf Trends (Query 10). --
