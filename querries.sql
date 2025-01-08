@@ -124,7 +124,7 @@ ORDER BY
     "Amount of declarations" DESC;
 
 
---11. Sind Regierungsmitglieder bessere Fahrer?                                         keine Aussagekraft!!!
+--11. Sind Regierungsmitglieder bessere Fahrer?
 SELECT 
     CASE 
         WHEN "Owner_of_vehicle" = 'Governmental' THEN 'Governmental'
@@ -277,6 +277,13 @@ from "desert";
 
 
 --20. 
+
+
+
+
+
+
+
 
 select*
 from "country";
