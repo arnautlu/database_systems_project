@@ -8,7 +8,9 @@ CREATE TABLE "GlobalTrafficAccidentsandRoadSafety" (
     "Road Safety Measures"	VARCHAR(512)
 );
 
-INSERT INTO "GlobalTrafficAccidentsandRoadSafety" ("Country", "Year", "Accidents Reported", "Fatalities", "Injuries", "Accident Type", "Road Safety Measures") VALUES
+INSERT INTO "GlobalTrafficAccidentsandRoadSafety" 
+	
+	("Country", "Year", "Accidents Reported", "Fatalities", "Injuries", "Accident Type", "Road Safety Measures") VALUES
 	('Canada', '2018', '35674', '99', '3024', 'Vehicle-to-Vehicle', 'Alcohol Laws'),
 	('Australia', '2016', '13708', '543', '2637', 'Vehicle-to-Vehicle', 'Alcohol Laws'),
 	('India', '2016', '39971', '231', '3334', 'Cyclist', 'Seatbelt Enforcement'),

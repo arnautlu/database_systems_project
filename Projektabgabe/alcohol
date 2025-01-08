@@ -10,6 +10,7 @@ CREATE TABLE "alcohol" (
 );
 
 INSERT INTO "alcohol" VALUES
+
     ('EMR', 'Eastern Mediterranean', 'AFG', 'Afghanistan', 2017, '0.5', 'Low', 'EN'),
     ('AFR', 'Africa', 'AGO', 'Angola', 2017, '1.2', 'Moderate', 'EN'),
     ('SEAR', 'South-East Asia', 'BGD', 'Bangladesh', 2017, '0.8', 'Low', 'EN'),
