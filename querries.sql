@@ -59,7 +59,7 @@ ORDER BY
     accident_count DESC;
 
 
---6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population?
+--6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population?                  keine Werte!!!
 SELECT 
     e."Location",
    ( AVG(e."Value")/100000) * c."population" AS AvgEstimatedDeathRatehochgerechnet,
@@ -76,7 +76,7 @@ ORDER BY
     AvgEstimatedDeathRatehochgerechnet DESC;
 
 
--- 7. In welchen Ländern gibt es die meisten Verkehrstoten?
+-- 7. In welchen Ländern gibt es die meisten Verkehrstoten?                                 keine Aussagekraft!!!
 SELECT "Location", SUM("Value") AS total_vehicle_deaths
 FROM "deathsvehicle"
 GROUP BY "Location"
@@ -111,7 +111,7 @@ ORDER BY
     TotalFatalities DESC;
 
 
---10. Welche Masßnahmen mussten am meisten eingesetzt werden?
+--10. Welche Masßnahmen mussten am meisten eingesetzt werden?                               in welchem Zusammenhang?
 SELECT 
     "Road Safety Measures",
     COUNT(*) AS UsageCount
@@ -123,7 +123,7 @@ ORDER BY
     UsageCount DESC;
 
 
---11. Sind Regierungsmitglieder bessere Fahrer?
+--11. Sind Regierungsmitglieder bessere Fahrer?                                         keine Aussagekraft!!!
 SELECT 
     CASE 
         WHEN "Owner_of_vehicle" = 'Governmental' THEN 'Governmental'
@@ -195,7 +195,7 @@ ORDER BY
 LIMIT 3;
 
 
---15. Unter welcher Regierng(-sform) sterben mehr Leute durch Verkehrunfälle?
+--15. Unter welcher Regierng(-sform) sterben mehr Leute durch Verkehrunfälle?                   keine daten!!!
 SELECT 
     p."government",
     SUM(r."FactValueNumeric") AS TotalRoadTrafficDeaths
@@ -212,7 +212,7 @@ ORDER BY
 LIMIT 10;
 
 
---16. Spielt die Wirtschaft eines Landes eine Rolle bei der Anzahl der Verkehrstoten?
+--16. Spielt die Wirtschaft eines Landes eine Rolle bei der Anzahl der Verkehrstoten?                           keine Daten!!
 --nur GDP oder vllt. Inflation/Arbeitslosenquote/etc.
 select *
 from "economy";
