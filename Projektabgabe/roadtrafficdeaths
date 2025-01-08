@@ -12,7 +12,6 @@ CREATE TABLE "roadtrafficdeaths" (
     "Value" VARCHAR(512)
 );
 
-
 INSERT INTO "roadtrafficdeaths" VALUES
     ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'NIU', 'Niue', '2021', '0','0', '0', '0', '0');
 INSERT INTO "roadtrafficdeaths" VALUES
