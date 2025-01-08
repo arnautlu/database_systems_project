@@ -68,7 +68,7 @@ SELECT
 FROM 
     "Estimatedroadtrafficdeathrate(per100000population)" e
 JOIN 
-    "roadtrafficdeaths2" r ON e."Location" = r."Location"
+    "roadtrafficdeaths" r ON e."Location" = r."Location"
 JOIN
     "country" c ON c."code" = e."SpatialDimValueCode"
 GROUP BY 
