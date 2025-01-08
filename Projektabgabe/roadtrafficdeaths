@@ -10,9 +10,9 @@ CREATE TABLE "roadtrafficdeaths" (
     "Period type" VARCHAR(512),
     "Period" INT,
     "Language" VARCHAR(512),
-    "DateModified" VARCHAR(512)
-    "FactValueNumeric" INT,
-,'0');
+    "DateModified" VARCHAR(512),
+    "FactValueNumeric" INT
+);
 
 INSERT INTO "roadtrafficdeaths" VALUES
     ('Estimated number of road traffic deaths', 'numeric', 'EUR', 'Europe', 'Country', 'MCO', 'Monaco', 'Year', 2021, 'EN', '2024-04-14T22:00:00.000Z','0');
