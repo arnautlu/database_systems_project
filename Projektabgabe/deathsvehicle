@@ -11,7 +11,6 @@ CREATE TABLE "deathsvehicle" (
     "Value"	FLOAT
 );
 
-
 INSERT INTO "deathsvehicle" VALUES ( 'Distribution of road traffic deaths by type of road user (%)', 'AFR', 'Africa', 'AGO', 'Angola', '2016', 'Other/unspecified road users', 'ROADUSERTYPE_RS-DDC-OTHER', '0', '0.0');
 INSERT INTO "deathsvehicle" VALUES ( 'Distribution of road traffic deaths by type of road user (%)', 'AMR', 'Americas', 'ATG', 'Antigua and Barbuda', '2016', 'Drivers/passengers of motorized 2- or 3-wheelers', 'ROADUSERTYPE_RS-DDC-2OR3WHEELS', '0', '0.0');
 INSERT INTO "deathsvehicle" VALUES ( 'Distribution of road traffic deaths by type of road user (%)', 'AMR', 'Americas', 'ATG', 'Antigua and Barbuda', '2016', 'Other/unspecified road users', 'ROADUSERTYPE_RS-DDC-OTHER', '0', '0.0');
