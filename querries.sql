@@ -264,7 +264,25 @@ ORDER BY
     "Unemployment" DESC;
 
 
---18. Beeinfluss die Verfügbarkeit von ??? ob es zu mehr Unfällen kommt die durch 
+--18. Spielt die Inflation eine Rolle bei der Anzahl der Verkehrstoten?
+SELECT 
+    c."name" AS "Country",
+    e."inflation" AS "Inflation",
+    SUM(r."FactValueNumeric") AS "Amount of deaths"
+FROM 
+    "economy" e
+JOIN 
+    "roadtrafficdeaths1" r ON e."country" = r."SpatialDimValueCode"
+JOIN 
+    "country" c ON e."country" = c."code"
+WHERE 
+    e."unemployment" IS NOT NULL
+GROUP BY 
+    e."country", c."name", e."unemployment"
+ORDER BY 
+    "Inflation" DESC;
+
+--19. Beeinfluss die Verfügbarkeit von ??? ob es zu mehr Unfällen kommt die durch 
 select *
 from "desert";
 
@@ -273,11 +291,13 @@ from "desert";
     from "RoadAccidentsSeverity";
 
 
---19.
+--20.
+select *
+from "economy";
 
 
 
---20. 
+--21. 
 
 
 
