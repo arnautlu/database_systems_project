@@ -13,537 +13,355 @@ CREATE TABLE "roadtrafficdeaths" (
 );
 
 INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'NIU', 'Niue', '2021', '0','0', '0', '0', '0');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MCO', 'Monaco', '2021', '0','0', '0', '0', '0 [0-1]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'NRU', 'Nauru', '2021', '1','1', '0', '1', '1 [1-1]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MLT', 'Malta', '2021', '10','8', '0', '12', '10 [8-12]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'TZA', 'United Republic of Tanzania', '2021', '10052','8246', '0', '11858', '10 052 [8246-11 858]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'EGY', 'Egypt', '2021', '10263','9121', '0', '11405', '10 263 [9121-11 405]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'MMR', 'Myanmar', '2021', '10405','9138', '0', '11671', '10 405 [9138-11 671]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'KNA', 'Saint Kitts and Nevis', '2021', '11','9', '0', '12', '11 [9-12]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'PHL', 'Philippines', '2021', '11062','10153', '0', '11972', '11 062 [10 153-11 972]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'SGP', 'Singapore', '2021', '110','96', '0', '124', '110 [96-124]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'AUS', 'Australia', '2021', '1163','1086', '0', '1240', '1163 [1086-1240]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'SLE', 'Sierra Leone', '2021', '1165','983', '0', '1347', '1165 [983-1347]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'BHR', 'Bahrain', '2021', '118','106', '0', '129', '118 [106-129]');
-INSERT INTO "roadtrafficdeaths" VALUES
-	( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MKD', 'North Macedonia', '2021', '120','113', '0', '126', '120 [113-126]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'LAO', 'Lao People''s Democratic Republic', '2021', '1217','1061', '0', '1373', '1217 [1061-1373]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'GUY', 'Guyana', '2021', '122','114', '0', '130', '122 [114-130]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'SVN', 'Slovenia', '2021', '122','114', '0', '130', '122 [114-130]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MUS', 'Mauritius', '2021', '126','111', '0', '142', '126 [111-142]');
-
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'DNK', 'Denmark', '2021', '134','125', '0', '143', '134 [125-143]');
-
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'TJK', 'Tajikistan', '2021', '1352','1239', '0', '1464', '1352 [1239-1464]');
-
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'SLV', 'El Salvador', '2021', '1358','1264', '0', '1452', '1358 [1264-1452]');
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'ZAF', 'South Africa', '2021', '14528','12983', '0', '16073', '14 528 [12 983-16 073]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'NIU', 'Niue', '2021', '0','0', '0', '0', '0'),
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MCO', 'Monaco', '2021', '0','0', '0', '0', '0 [0-1]'),
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'NRU', 'Nauru', '2021', '1','1', '0', '1', '1 [1-1]'),
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MLT', 'Malta', '2021', '10','8', '0', '12', '10 [8-12]'),
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'TZA', 'United Republic of Tanzania', '2021', '10052','8246', '0', '11858', '10 052 [8246-11 858]'),
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'EGY', 'Egypt', '2021', '10263','9121', '0', '11405', '10 263 [9121-11 405]'),
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'MMR', 'Myanmar', '2021', '10405','9138', '0', '11671', '10 405 [9138-11 671]'),
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'KNA', 'Saint Kitts and Nevis', '2021', '11','9', '0', '12', '11 [9-12]'),
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'PHL', 'Philippines', '2021', '11062','10153', '0', '11972', '11 062 [10 153-11 972]'),
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'SGP', 'Singapore', '2021', '110','96', '0', '124', '110 [96-124]'),
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'AUS', 'Australia', '2021', '1163','1086', '0', '1240', '1163 [1086-1240]'),
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'SLE', 'Sierra Leone', '2021', '1165','983', '0', '1347', '1165 [983-1347]'),
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'BHR', 'Bahrain', '2021', '118','106', '0', '129', '118 [106-129]'),
+	( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MKD', 'North Macedonia', '2021', '120','113', '0', '126', '120 [113-126]'),
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'LAO', 'Lao People''s Democratic Republic', '2021', '1217','1061', '0', '1373', '1217 [1061-1373]'),
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'GUY', 'Guyana', '2021', '122','114', '0', '130', '122 [114-130]'),
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'SVN', 'Slovenia', '2021', '122','114', '0', '130', '122 [114-130]'),
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MUS', 'Mauritius', '2021', '126','111', '0', '142', '126 [111-142]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'KEN', 'Kenya', '2021', '14926','13002', '0', '16851', '14 926 [13 002-16 851]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'DNK', 'Denmark', '2021', '134','125', '0', '143', '134 [125-143]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'PRY', 'Paraguay', '2021', '1405','1299', '0', '1511', '1405 [1299-1511]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'TJK', 'Tajikistan', '2021', '1352','1239', '0', '1464', '1352 [1239-1464]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'IRL', 'Ireland', '2021', '141','129', '0', '153', '141 [129-153]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'SLV', 'El Salvador', '2021', '1358','1264', '0', '1452', '1358 [1264-1452]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'CAF', 'Central African Republic', '2021', '1412','1129', '0', '1696', '1412 [1129-1696]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'ZAF', 'South Africa', '2021', '14528','12983', '0', '16073', '14 528 [12 983-16 073]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'PNG', 'Papua New Guinea', '2021', '1483','1290', '0', '1676', '1483 [1290-1676]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'KEN', 'Kenya', '2021', '14926','13002', '0', '16851', '14 926 [13 002-16 851]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'MEX', 'Mexico', '2021', '15267','14269', '0', '16265', '15 267 [14 269-16 265]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'PRY', 'Paraguay', '2021', '1405','1299', '0', '1511', '1405 [1299-1511]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'RUS', 'Russian Federation', '2021', '15335','14020', '0', '16650', '15 335 [14 020-16 650]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'IRL', 'Ireland', '2021', '141','129', '0', '153', '141 [129-153]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'COD', 'Democratic Republic of the Congo', '2021', '15615','12655', '0', '18574', '15 615 [12 655-18 574]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'CAF', 'Central African Republic', '2021', '1412','1129', '0', '1696', '1412 [1129-1696]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'JOR', 'Jordan', '2021', '1514','1281', '0', '1747', '1514 [1281-1747]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'PNG', 'Papua New Guinea', '2021', '1483','1290', '0', '1676', '1483 [1290-1676]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'BDI', 'Burundi', '2021', '1546','1236', '0', '1857', '1546 [1236-1857]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'MEX', 'Mexico', '2021', '15267','14269', '0', '16265', '15 267 [14 269-16 265]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'RWA', 'Rwanda', '2021', '1563','1286', '0', '1841', '1563 [1286-1841]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'RUS', 'Russian Federation', '2021', '15335','14020', '0', '16650', '15 335 [14 020-16 650]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'TLS', 'Timor-Leste', '2021', '159','142', '0', '175', '159 [142-175]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'COD', 'Democratic Republic of the Congo', '2021', '15615','12655', '0', '18574', '15 615 [12 655-18 574]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'FSM', 'Micronesia (Federated States of)', '2021', '16','14', '0', '18', '16 [14-18]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'JOR', 'Jordan', '2021', '1514','1281', '0', '1747', '1514 [1281-1747]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'LCA', 'Saint Lucia', '2021', '16','14', '0', '18', '16 [14-18]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'BDI', 'Burundi', '2021', '1546','1236', '0', '1857', '1546 [1236-1857]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'BRN', 'Brunei Darussalam', '2021', '16','15', '0', '18', '16 [15-18]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'RWA', 'Rwanda', '2021', '1563','1286', '0', '1841', '1563 [1286-1841]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'GBR', 'United Kingdom of Great Britain and Northern Ireland', '2021', '1606','1511', '0', '1701', '1606 [1511-1701]');
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'TLS', 'Timor-Leste', '2021', '159','142', '0', '175', '159 [142-175]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ESP', 'Spain', '2021', '1653','1576', '0', '1730', '1653 [1576-1730]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'FSM', 'Micronesia (Federated States of)', '2021', '16','14', '0', '18', '16 [14-18]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'VNM', 'Viet Nam', '2021', '17229','15364', '0', '19093', '17 229 [15 364-19 093]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'LCA', 'Saint Lucia', '2021', '16','14', '0', '18', '16 [14-18]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'LTU', 'Lithuania', '2021', '175','164', '0', '186', '175 [164-186]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'BRN', 'Brunei Darussalam', '2021', '16','15', '0', '18', '16 [15-18]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'AZE', 'Azerbaijan', '2021', '1769','1635', '0', '1904', '1769 [1635-1904]');
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'IRN', 'Iran (Islamic Republic of)', '2021', '18156','15856', '0', '20456', '18 156 [15 856-20 456]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'GBR', 'United Kingdom of Great Britain and Northern Ireland', '2021', '1606','1511', '0', '1701', '1606 [1511-1701]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'THA', 'Thailand', '2021', '18218','16787', '0', '19649', '18 218 [16 787-19 649]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ESP', 'Spain', '2021', '1653','1576', '0', '1730', '1653 [1576-1730]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'CAN', 'Canada', '2021', '1805','1701', '0', '1909', '1805 [1701-1909]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'VNM', 'Viet Nam', '2021', '17229','15364', '0', '19093', '17 229 [15 364-19 093]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'LVA', 'Latvia', '2021', '183','168', '0', '197', '183 [168-197]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'LTU', 'Lithuania', '2021', '175','164', '0', '186', '175 [164-186]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ROU', 'Romania', '2021', '1856','1681', '0', '2030', '1856 [1681-2030]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'AZE', 'Azerbaijan', '2021', '1769','1635', '0', '1904', '1769 [1635-1904]'),
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'IRN', 'Iran (Islamic Republic of)', '2021', '18156','15856', '0', '20456', '18 156 [15 856-20 456]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'HND', 'Honduras', '2021', '1904','1746', '0', '2063', '1904 [1746-2063]');
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'THA', 'Thailand', '2021', '18218','16787', '0', '19649', '18 218 [16 787-19 649]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GNQ', 'Equatorial Guinea', '2021', '192','153', '0', '231', '192 [153-231]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'CAN', 'Canada', '2021', '1805','1701', '0', '1909', '1805 [1701-1909]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'TGO', 'Togo', '2021', '1961','1644', '0', '2277', '1961 [1644-2277]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'LVA', 'Latvia', '2021', '183','168', '0', '197', '183 [168-197]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'QAT', 'Qatar', '2021', '197','184', '0', '210', '197 [184-210]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ROU', 'Romania', '2021', '1856','1681', '0', '2030', '1856 [1681-2030]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'AND', 'Andorra', '2021', '2','2', '0', '2', '2 [2-2]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'HND', 'Honduras', '2021', '1904','1746', '0', '2063', '1904 [1746-2063]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'SMR', 'San Marino', '2021', '2','2', '0', '2', '2 [2-2]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GNQ', 'Equatorial Guinea', '2021', '192','153', '0', '231', '192 [153-231]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'TUV', 'Tuvalu', '2021', '2','2', '0', '2', '2 [2-2]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'TGO', 'Togo', '2021', '1961','1644', '0', '2277', '1961 [1644-2277]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'TUN', 'Tunisia', '2021', '2004','1786', '0', '2222', '2004 [1786-2222]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'QAT', 'Qatar', '2021', '197','184', '0', '210', '197 [184-210]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'CHL', 'Chile', '2021', '2009','1911', '0', '2106', '2009 [1911-2106]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'AND', 'Andorra', '2021', '2','2', '0', '2', '2 [2-2]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'IND', 'India', '2021', '205894','183703', '0', '228085', '205 894 [183 703-228 085]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'SMR', 'San Marino', '2021', '2','2', '0', '2', '2 [2-2]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'CHE', 'Switzerland', '2021', '206','194', '0', '219', '206 [194-219]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'TUV', 'Tuvalu', '2021', '2','2', '0', '2', '2 [2-2]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'WSM', 'Samoa', '2021', '21','19', '0', '23', '21 [19-23]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'TUN', 'Tunisia', '2021', '2004','1786', '0', '2222', '2004 [1786-2222]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'ETH', 'Ethiopia', '2021', '21258','18363', '0', '24153', '21 258 [18 363-24 153]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'CHL', 'Chile', '2021', '2009','1911', '0', '2106', '2009 [1911-2106]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'BOL', 'Bolivia (Plurinational State of)', '2021', '2127','1987', '0', '2268', '2127 [1987-2268]');
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'IND', 'India', '2021', '205894','183703', '0', '228085', '205 894 [183 703-228 085]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'SWE', 'Sweden', '2021', '217','199', '0', '234', '217 [199-234]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'CHE', 'Switzerland', '2021', '206','194', '0', '219', '206 [194-219]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'GTM', 'Guatemala', '2021', '2221','2050', '0', '2391', '2221 [2050-2391]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'WSM', 'Samoa', '2021', '21','19', '0', '23', '21 [19-23]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'LBY', 'Libya', '2021', '2287','1996', '0', '2578', '2287 [1996-2578]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'ETH', 'Ethiopia', '2021', '21258','18363', '0', '24153', '21 258 [18 363-24 153]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'FIN', 'Finland', '2021', '232','214', '0', '250', '232 [214-250]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'BOL', 'Bolivia (Plurinational State of)', '2021', '2127','1987', '0', '2268', '2127 [1987-2268]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'KAZ', 'Kazakhstan', '2021', '2340','2147', '0', '2534', '2340 [2147-2534]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'SWE', 'Sweden', '2021', '217','199', '0', '234', '217 [199-234]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'COM', 'Comoros', '2021', '238','205', '0', '271', '238 [205-271]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'GTM', 'Guatemala', '2021', '2221','2050', '0', '2391', '2221 [2050-2391]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'PSE', 'occupied Palestinian territory, including east Jerusalem', '2021', '239','199', '0', '279', '239 [199-279]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'LBY', 'Libya', '2021', '2287','1996', '0', '2578', '2287 [1996-2578]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'POL', 'Poland', '2021', '2474','2303', '0', '2645', '2474 [2303-2645]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'FIN', 'Finland', '2021', '232','214', '0', '250', '232 [214-250]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'CHN', 'China', '2021', '248099','233685', '0', '262513', '248 099 [233 685-262 513]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'KAZ', 'Kazakhstan', '2021', '2340','2147', '0', '2534', '2340 [2147-2534]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'LUX', 'Luxembourg', '2021', '25','23', '0', '27', '25 [23-27]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'COM', 'Comoros', '2021', '238','205', '0', '271', '238 [205-271]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'SSD', 'South Sudan', '2021', '2500','1966', '0', '3035', '2500 [1966-3035]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'PSE', 'occupied Palestinian territory, including east Jerusalem', '2021', '239','199', '0', '279', '239 [199-279]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'LKA', 'Sri Lanka', '2021', '2513','2221', '0', '2805', '2513 [2221-2805]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'POL', 'Poland', '2021', '2474','2303', '0', '2645', '2474 [2303-2645]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'DJI', 'Djibouti', '2021', '258','227', '0', '288', '258 [227-288]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'CHN', 'China', '2021', '248099','233685', '0', '262513', '248 099 [233 685-262 513]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'STP', 'Sao Tome and Principe', '2021', '26','21', '0', '31', '26 [21-31]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'LUX', 'Luxembourg', '2021', '25','23', '0', '27', '25 [23-27]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'PAK', 'Pakistan', '2021', '27568','23854', '0', '31282', '27 568 [23 854-31 282]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'SSD', 'South Sudan', '2021', '2500','1966', '0', '3035', '2500 [1966-3035]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'DEU', 'Germany', '2021', '2778','2596', '0', '2960', '2778 [2596-2960]');
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'LKA', 'Sri Lanka', '2021', '2513','2221', '0', '2805', '2513 [2221-2805]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MDA', 'Republic of Moldova', '2021', '278','264', '0', '293', '278 [264-293]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'DJI', 'Djibouti', '2021', '258','227', '0', '288', '258 [227-288]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'BRB', 'Barbados', '2021', '28','25', '0', '31', '28 [25-31]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'STP', 'Sao Tome and Principe', '2021', '26','21', '0', '31', '26 [21-31]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'CMR', 'Cameroon', '2021', '2870','2322', '0', '3419', '2870 [2322-3419]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'PAK', 'Pakistan', '2021', '27568','23854', '0', '31282', '27 568 [23 854-31 282]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GAB', 'Gabon', '2021', '293','253', '0', '333', '293 [253-333]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'DEU', 'Germany', '2021', '2778','2596', '0', '2960', '2778 [2596-2960]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'SWZ', 'Eswatini', '2021', '295','248', '0', '342', '295 [248-342]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MDA', 'Republic of Moldova', '2021', '278','264', '0', '293', '278 [264-293]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ITA', 'Italy', '2021', '2964','2785', '0', '3143', '2964 [2785-3143]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'BRB', 'Barbados', '2021', '28','25', '0', '31', '28 [25-31]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'COK', 'Cook Islands', '2021', '3','3', '0', '4', '3 [3-4]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'CMR', 'Cameroon', '2021', '2870','2322', '0', '3419', '2870 [2322-3419]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'FRA', 'France', '2021', '3035','2743', '0', '3328', '3035 [2743-3328]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GAB', 'Gabon', '2021', '293','253', '0', '333', '293 [253-333]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'DOM', 'Dominican Republic', '2021', '3048','2826', '0', '3270', '3048 [2826-3270]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'SWZ', 'Eswatini', '2021', '295','248', '0', '342', '295 [248-342]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ALB', 'Albania', '2021', '309','289', '0', '329', '309 [289-329]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ITA', 'Italy', '2021', '2964','2785', '0', '3143', '2964 [2785-3143]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'IDN', 'Indonesia', '2021', '31063','27226', '0', '34901', '31 063 [27 226-34 901]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'COK', 'Cook Islands', '2021', '3','3', '0', '4', '3 [3-4]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'BGD', 'Bangladesh', '2021', '31578','27441', '0', '35716', '31 578 [27 441-35 716]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'FRA', 'France', '2021', '3035','2743', '0', '3328', '3035 [2743-3328]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'KHM', 'Cambodia', '2021', '3113','2804', '0', '3422', '3113 [2804-3422]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'DOM', 'Dominican Republic', '2021', '3048','2826', '0', '3270', '3048 [2826-3270]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'UZB', 'Uzbekistan', '2021', '3155','2678', '0', '3633', '3155 [2678-3633]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ALB', 'Albania', '2021', '309','289', '0', '329', '309 [289-329]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'PAN', 'Panama', '2021', '316','289', '0', '342', '316 [289-342]');
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'IDN', 'Indonesia', '2021', '31063','27226', '0', '34901', '31 063 [27 226-34 901]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'NGA', 'Nigeria', '2021', '36722','32053', '0', '41391', '36 722 [32 053-41 391]');
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'BGD', 'Bangladesh', '2021', '31578','27441', '0', '35716', '31 578 [27 441-35 716]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'VEN', 'Venezuela (Bolivarian Republic of)', '2021', '3718','3394', '0', '4041', '3718 [3394-4041]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'KHM', 'Cambodia', '2021', '3113','2804', '0', '3422', '3113 [2804-3422]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ISR', 'Israel', '2021', '375','343', '0', '407', '375 [343-407]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'UZB', 'Uzbekistan', '2021', '3155','2678', '0', '3633', '3155 [2678-3633]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ARM', 'Armenia', '2021', '379','350', '0', '409', '379 [350-409]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'PAN', 'Panama', '2021', '316','289', '0', '342', '316 [289-342]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'KWT', 'Kuwait', '2021', '389','345', '0', '432', '389 [345-432]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'NGA', 'Nigeria', '2021', '36722','32053', '0', '41391', '36 722 [32 053-41 391]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'ARG', 'Argentina', '2021', '3983','3743', '0', '4223', '3983 [3743-4223]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'VEN', 'Venezuela (Bolivarian Republic of)', '2021', '3718','3394', '0', '4041', '3718 [3394-4041]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'PLW', 'Palau', '2021', '4','3', '0', '4', '4 [3-4]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ISR', 'Israel', '2021', '375','343', '0', '407', '375 [343-407]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'VUT', 'Vanuatu', '2021', '40','36', '0', '44', '40 [36-44]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ARM', 'Armenia', '2021', '379','350', '0', '409', '379 [350-409]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MWI', 'Malawi', '2021', '4023','3326', '0', '4720', '4023 [3326-4720]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'KWT', 'Kuwait', '2021', '389','345', '0', '432', '389 [345-432]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'PRI', 'Puerto Rico', '2021', '407','364', '0', '451', '407 [364-451]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'ARG', 'Argentina', '2021', '3983','3743', '0', '4223', '3983 [3743-4223]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'AUT', 'Austria', '2021', '409','386', '0', '432', '409 [386-432]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'PLW', 'Palau', '2021', '4','3', '0', '4', '4 [3-4]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'MNG', 'Mongolia', '2021', '414','391', '0', '437', '414 [391-437]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'VUT', 'Vanuatu', '2021', '40','36', '0', '44', '40 [36-44]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'ECU', 'Ecuador', '2021', '4173','3846', '0', '4501', '4173 [3846-4501]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MWI', 'Malawi', '2021', '4023','3326', '0', '4720', '4023 [3326-4720]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'BWA', 'Botswana', '2021', '426','376', '0', '475', '426 [376-475]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'PRI', 'Puerto Rico', '2021', '407','364', '0', '451', '407 [364-451]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'PER', 'Peru', '2021', '4284','3991', '0', '4577', '4284 [3991-4577]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'AUT', 'Austria', '2021', '409','386', '0', '432', '409 [386-432]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MRT', 'Mauritania', '2021', '438','369', '0', '506', '438 [369-506]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'MNG', 'Mongolia', '2021', '414','391', '0', '437', '414 [391-437]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MLI', 'Mali', '2021', '4429','3671', '0', '5188', '4429 [3671-5188]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'ECU', 'Ecuador', '2021', '4173','3846', '0', '4501', '4173 [3846-4501]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'URY', 'Uruguay', '2021', '447','413', '0', '482', '447 [413-482]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'BWA', 'Botswana', '2021', '426','376', '0', '475', '426 [376-475]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'BIH', 'Bosnia and Herzegovina', '2021', '447','425', '0', '470', '447 [425-470]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'PER', 'Peru', '2021', '4284','3991', '0', '4577', '4284 [3991-4577]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'TCD', 'Chad', '2021', '4533','3722', '0', '5343', '4533 [3722-5343]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MRT', 'Mauritania', '2021', '438','369', '0', '506', '438 [369-506]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'UKR', 'Ukraine', '2021', '4558','4373', '0', '4743', '4558 [4373-4743]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MLI', 'Mali', '2021', '4429','3671', '0', '5188', '4429 [3671-5188]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'MYS', 'Malaysia', '2021', '4680','4170', '0', '5189', '4680 [4170-5189]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'URY', 'Uruguay', '2021', '447','413', '0', '482', '447 [413-482]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'USA', 'United States of America', '2021', '47750','44464', '0', '51035', '47 750 [44 464-51 035]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'BIH', 'Bosnia and Herzegovina', '2021', '447','425', '0', '470', '447 [425-470]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'GEO', 'Georgia', '2021', '476','444', '0', '507', '476 [444-507]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'TCD', 'Chad', '2021', '4533','3722', '0', '5343', '4533 [3722-5343]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'ZWE', 'Zimbabwe', '2021', '4782','3874', '0', '5691', '4782 [3874-5691]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'UKR', 'Ukraine', '2021', '4558','4373', '0', '4743', '4558 [4373-4743]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'COG', 'Congo', '2021', '488','403', '0', '572', '488 [403-572]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'MYS', 'Malaysia', '2021', '4680','4170', '0', '5189', '4680 [4170-5189]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'CYP', 'Cyprus', '2021', '49','46', '0', '51', '49 [46-51]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'USA', 'United States of America', '2021', '47750','44464', '0', '51035', '47 750 [44 464-51 035]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'FJI', 'Fiji', '2021', '49','46', '0', '52', '49 [46-52]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'GEO', 'Georgia', '2021', '476','444', '0', '507', '476 [444-507]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'LSO', 'Lesotho', '2021', '492','426', '0', '558', '492 [426-558]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'ZWE', 'Zimbabwe', '2021', '4782','3874', '0', '5691', '4782 [3874-5691]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'OMN', 'Oman', '2021', '497','433', '0', '560', '497 [433-560]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'COG', 'Congo', '2021', '488','403', '0', '572', '488 [403-572]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'MHL', 'Marshall Islands', '2021', '5','5', '0', '6', '5 [5-6]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'CYP', 'Cyprus', '2021', '49','46', '0', '51', '49 [46-51]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'VCT', 'Saint Vincent and the Grenadines', '2021', '5','5', '0', '6', '5 [5-6]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'FJI', 'Fiji', '2021', '49','46', '0', '52', '49 [46-52]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'JAM', 'Jamaica', '2021', '502','454', '0', '550', '502 [454-550]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'LSO', 'Lesotho', '2021', '492','426', '0', '558', '492 [426-558]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GIN', 'Guinea', '2021', '5061','4277', '0', '5845', '5061 [4277-5845]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'OMN', 'Oman', '2021', '497','433', '0', '560', '497 [433-560]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'TKM', 'Turkmenistan', '2021', '509','472', '0', '546', '509 [472-546]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'MHL', 'Marshall Islands', '2021', '5','5', '0', '6', '5 [5-6]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'AGO', 'Angola', '2021', '5188','4301', '0', '6075', '5188 [4301-6075]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'VCT', 'Saint Vincent and the Grenadines', '2021', '5','5', '0', '6', '5 [5-6]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'BEL', 'Belgium', '2021', '532','481', '0', '583', '532 [481-583]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'JAM', 'Jamaica', '2021', '502','454', '0', '550', '502 [454-550]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'SRB', 'Serbia', '2021', '537','510', '0', '564', '537 [510-564]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GIN', 'Guinea', '2021', '5061','4277', '0', '5845', '5061 [4277-5845]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'LBN', 'Lebanon', '2021', '544','471', '0', '617', '544 [471-617]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'TKM', 'Turkmenistan', '2021', '509','472', '0', '546', '509 [472-546]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'CZE', 'Czechia', '2021', '548','507', '0', '590', '548 [507-590]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'AGO', 'Angola', '2021', '5188','4301', '0', '6075', '5188 [4301-6075]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'TUR', 'Türkiye', '2021', '5528','4945', '0', '6112', '5528 [4945-6112]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'BEL', 'Belgium', '2021', '532','481', '0', '583', '532 [481-583]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'ARE', 'United Arab Emirates', '2021', '557','486', '0', '628', '557 [486-628]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'SRB', 'Serbia', '2021', '537','510', '0', '564', '537 [510-564]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'NAM', 'Namibia', '2021', '557','488', '0', '625', '557 [488-625]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'LBN', 'Lebanon', '2021', '544','471', '0', '617', '544 [471-617]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'CIV', 'Cote d\Ivoire', '2021', '5670','4883', '0', '6456', '5670 [4883-6456]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'CZE', 'Czechia', '2021', '548','507', '0', '590', '548 [507-590]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MNE', 'Montenegro', '2021', '57','54', '0', '60', '57 [54-60]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'TUR', 'Türkiye', '2021', '5528','4945', '0', '6112', '5528 [4945-6112]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'BGR', 'Bulgaria', '2021', '578','546', '0', '611', '578 [546-611]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'ARE', 'United Arab Emirates', '2021', '557','486', '0', '628', '557 [486-628]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GMB', 'Gambia', '2021', '582','479', '0', '685', '582 [479-685]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'NAM', 'Namibia', '2021', '557','488', '0', '625', '557 [488-625]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'EST', 'Estonia', '2021', '59','55', '0', '64', '59 [55-64]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'CIV', 'Cote d\Ivoire', '2021', '5670','4883', '0', '6456', '5670 [4883-6456]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'NLD', 'Netherlands (Kingdom of the)', '2021', '600','554', '0', '646', '600 [554-646]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'MNE', 'Montenegro', '2021', '57','54', '0', '60', '57 [54-60]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'CUB', 'Cuba', '2021', '613','556', '0', '670', '613 [556-670]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'BGR', 'Bulgaria', '2021', '578','546', '0', '611', '578 [546-611]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'BFA', 'Burkina Faso', '2021', '6137','5032', '0', '7242', '6137 [5032-7242]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GMB', 'Gambia', '2021', '582','479', '0', '685', '582 [479-685]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'NER', 'Niger', '2021', '6278','5131', '0', '7425', '6278 [5131-7425]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'EST', 'Estonia', '2021', '59','55', '0', '64', '59 [55-64]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GNB', 'Guinea-Bissau', '2021', '629','539', '0', '718', '629 [539-718]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'NLD', 'Netherlands (Kingdom of the)', '2021', '600','554', '0', '646', '600 [554-646]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'SYR', 'Syrian Arab Republic', '2021', '6383','5269', '0', '7497', '6383 [5269-7497]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'CUB', 'Cuba', '2021', '613','556', '0', '670', '613 [556-670]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'ERI', 'Eritrea', '2021', '640','542', '0', '738', '640 [542-738]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'BFA', 'Burkina Faso', '2021', '6137','5032', '0', '7242', '6137 [5032-7242]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MOZ', 'Mozambique', '2021', '6451','5327', '0', '7574', '6451 [5327-7574]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'NER', 'Niger', '2021', '6278','5131', '0', '7425', '6278 [5131-7425]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MDG', 'Madagascar', '2021', '6512','5585', '0', '7438', '6512 [5585-7438]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GNB', 'Guinea-Bissau', '2021', '629','539', '0', '718', '629 [539-718]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'BHS', 'Bahamas', '2021', '66','59', '0', '72', '66 [59-72]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'SYR', 'Syrian Arab Republic', '2021', '6383','5269', '0', '7497', '6383 [5269-7497]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'SAU', 'Saudi Arabia', '2021', '6651','6537', '0', '6787', '6651 [6537-6787]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'ERI', 'Eritrea', '2021', '640','542', '0', '738', '640 [542-738]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'MAR', 'Morocco', '2021', '6900','6204', '0', '7597', '6900 [6204-7597]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MOZ', 'Mozambique', '2021', '6451','5327', '0', '7574', '6451 [5327-7574]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'ATG', 'Antigua and Barbuda', '2021', '7','6', '0', '8', '7 [6-8]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'MDG', 'Madagascar', '2021', '6512','5585', '0', '7438', '6512 [5585-7438]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'MDV', 'Maldives', '2021', '7','6', '0', '8', '7 [6-8]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'BHS', 'Bahamas', '2021', '66','59', '0', '72', '66 [59-72]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'SYC', 'Seychelles', '2021', '7','6', '0', '8', '7 [6-8]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'SAU', 'Saudi Arabia', '2021', '6651','6537', '0', '6787', '6651 [6537-6787]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'BLZ', 'Belize', '2021', '70','66', '0', '75', '70 [66-75]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'MAR', 'Morocco', '2021', '6900','6204', '0', '7597', '6900 [6204-7597]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'BLR', 'Belarus', '2021', '706','650', '0', '761', '706 [650-761]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'ATG', 'Antigua and Barbuda', '2021', '7','6', '0', '8', '7 [6-8]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'HUN', 'Hungary', '2021', '718','664', '0', '773', '718 [664-773]');
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'MDV', 'Maldives', '2021', '7','6', '0', '8', '7 [6-8]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'UGA', 'Uganda', '2021', '7315','5617', '0', '9013', '7315 [5617-9013]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'SYC', 'Seychelles', '2021', '7','6', '0', '8', '7 [6-8]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'PRT', 'Portugal', '2021', '736','698', '0', '775', '736 [698-775]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'BLZ', 'Belize', '2021', '70','66', '0', '75', '70 [66-75]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'GRC', 'Greece', '2021', '762','709', '0', '815', '762 [709-815]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'BLR', 'Belarus', '2021', '706','650', '0', '761', '706 [650-761]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'TTO', 'Trinidad and Tobago', '2021', '77','73', '0', '82', '77 [73-82]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'HUN', 'Hungary', '2021', '718','664', '0', '773', '718 [664-773]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'SLB', 'Solomon Islands', '2021', '79','71', '0', '86', '79 [71-86]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'UGA', 'Uganda', '2021', '7315','5617', '0', '9013', '7315 [5617-9013]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'LBR', 'Liberia', '2021', '794','651', '0', '936', '794 [651-936]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'PRT', 'Portugal', '2021', '736','698', '0', '775', '736 [698-775]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'CRI', 'Costa Rica', '2021', '798','734', '0', '863', '798 [734-863]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'GRC', 'Greece', '2021', '762','709', '0', '815', '762 [709-815]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'DMA', 'Dominica', '2021', '8','7', '0', '9', '8 [7-9]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'TTO', 'Trinidad and Tobago', '2021', '77','73', '0', '82', '77 [73-82]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'KIR', 'Kiribati', '2021', '8','8', '0', '10', '8 [8-10]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'SLB', 'Solomon Islands', '2021', '79','71', '0', '86', '79 [71-86]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'GRD', 'Grenada', '2021', '8','8', '0', '9', '8 [8-9]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'LBR', 'Liberia', '2021', '794','651', '0', '936', '794 [651-936]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'DZA', 'Algeria', '2021', '8106','7119', '0', '9094', '8106 [7119-9094]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'CRI', 'Costa Rica', '2021', '798','734', '0', '863', '798 [734-863]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'NOR', 'Norway', '2021', '82','76', '0', '89', '82 [76-89]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'DMA', 'Dominica', '2021', '8','7', '0', '9', '8 [7-9]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'COL', 'Colombia', '2021', '8341','7693', '0', '8988', '8341 [7693-8988]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'KIR', 'Kiribati', '2021', '8','8', '0', '10', '8 [8-10]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'NPL', 'Nepal', '2021', '8479','7622', '0', '9336', '8479 [7622-9336]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'GRD', 'Grenada', '2021', '8','8', '0', '9', '8 [8-9]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GHA', 'Ghana', '2021', '8494','7447', '0', '9540', '8494 [7447-9540]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'DZA', 'Algeria', '2021', '8106','7119', '0', '9094', '8106 [7119-9094]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'KGZ', 'Kyrgyzstan', '2021', '869','789', '0', '949', '869 [789-949]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'NOR', 'Norway', '2021', '82','76', '0', '89', '82 [76-89]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'SDN', 'Sudan', '2021', '8967','7746', '0', '10187', '8967 [7746-10187]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'COL', 'Colombia', '2021', '8341','7693', '0', '8988', '8341 [7693-8988]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'TON', 'Tonga', '2021', '9','8', '0', '10', '9 [8-10]');
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'NPL', 'Nepal', '2021', '8479','7622', '0', '9336', '8479 [7622-9336]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ISL', 'Iceland', '2021', '9','9', '0', '10', '9 [9-10]');
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'GHA', 'Ghana', '2021', '8494','7447', '0', '9540', '8494 [7447-9540]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'NIC', 'Nicaragua', '2021', '932','842', '0', '1022', '932 [842-1022]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'KGZ', 'Kyrgyzstan', '2021', '869','789', '0', '949', '869 [789-949]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'IRQ', 'Iraq', '2021', '9344','8166', '0', '10521', '9344 [8166-10521]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'SDN', 'Sudan', '2021', '8967','7746', '0', '10187', '8967 [7746-10187]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'BTN', 'Bhutan', '2021', '95','84', '0', '106', '95 [84-106]');
+    ( 'Estimated number of road traffic deaths', 'WPR', 'Western Pacific', 'TON', 'Tonga', '2021', '9','8', '0', '10', '9 [8-10]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'AFG', 'Afghanistan', '2021', '9684','8542', '0', '10826', '9684 [8542-10826]');
+    ( 'Estimated number of road traffic deaths', 'EUR', 'Europe', 'ISL', 'Iceland', '2021', '9','9', '0', '10', '9 [9-10]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'CPV', 'Cabo Verde', '2021', '97','86', '0', '107', '97 [86-107]');
+    ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'NIC', 'Nicaragua', '2021', '932','842', '0', '1022', '932 [842-1022]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
-    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'YEM', 'Yemen', '2021', '9821','8380', '0', '11261', '9821 [8380-11261]');
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'IRQ', 'Iraq', '2021', '9344','8166', '0', '10521', '9344 [8166-10521]'),
 
-INSERT INTO "roadtrafficdeaths" VALUES
+    ( 'Estimated number of road traffic deaths', 'SEAR', 'South-East Asia', 'BTN', 'Bhutan', '2021', '95','84', '0', '106', '95 [84-106]'),
+
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'AFG', 'Afghanistan', '2021', '9684','8542', '0', '10826', '9684 [8542-10826]'),
+
+    ( 'Estimated number of road traffic deaths', 'AFR', 'Africa', 'CPV', 'Cabo Verde', '2021', '97','86', '0', '107', '97 [86-107]'),
+
+    ( 'Estimated number of road traffic deaths', 'EMR', 'Eastern Mediterranean', 'YEM', 'Yemen', '2021', '9821','8380', '0', '11261', '9821 [8380-11261]'),
+
     ( 'Estimated number of road traffic deaths', 'AMR', 'Americas', 'SUR', 'Suriname', '2021', '99','93', '0', '105', '99 [93-105]');
 
 
