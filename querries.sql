@@ -60,7 +60,7 @@ ORDER BY
     "Amount of accidents" DESC;
 
 
---6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population?                  keine Werte!!!
+--6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population?
 SELECT 
     e."Location",
    (AVG(e."Value")/100000) * c."population" AS "100.000-value projected to the actual population",
@@ -77,7 +77,7 @@ ORDER BY
     "100.000-value projected to the actual population" DESC;
 
 
--- 7. In welchen Ländern gibt es die meisten Verkehrstoten?                                 keine Aussagekraft!!!
+-- 7. In welchen Ländern gibt es die meisten Verkehrstoten?
 SELECT "Location", SUM("Value") AS "Amount of deaths"
 FROM "deathsvehicle"
 GROUP BY "Location"
@@ -208,7 +208,7 @@ ORDER BY
 LIMIT 3;
 
 
---15. Unter welcher Regierng(-sform) sterben mehr Leute durch Verkehrunfälle?                   keine daten!!!
+--15. Unter welcher Regierng(-sform) sterben mehr Leute durch Verkehrunfälle?
 SELECT 
     p."government" AS "Type of government",
     SUM(r."FactValueNumeric") AS "Amount of deaths"
@@ -225,13 +225,45 @@ ORDER BY
 LIMIT 10;
 
 
---16. Spielt die Wirtschaft eines Landes eine Rolle bei der Anzahl der Verkehrstoten?                           keine Daten!!
---nur GDP oder vllt. Inflation/Arbeitslosenquote/etc.
-select *
-from "economy";
+--16. Spielt das BIP eines Landes eine Rolle bei der Anzahl der Verkehrstoten? 
+SELECT 
+    c."name" AS "Country",
+    e."gdp" AS "GDP",
+    SUM(r."FactValueNumeric") AS "Amount of deaths"
+FROM 
+    "economy" e
+JOIN 
+    "roadtrafficdeaths1" r ON e."country" = r."SpatialDimValueCode"
+JOIN 
+    "country" c ON e."country" = c."code"
+WHERE 
+    e."unemployment" IS NOT NULL
+GROUP BY 
+    e."country", c."name", e."unemployment"
+ORDER BY 
+    "GDP" DESC;
 
 
---17. Beeinfluss die Verfügbarkeit von ??? ob es zu mehr Unfällen kommt die durch 
+--17.  Spielt die Arbeitslosenquote eine Rolle bei der Anzahl der Verkehrstoten?    
+SELECT 
+    c."name" AS "Country",
+    e."unemployment" AS "Unemployment",
+    SUM(r."FactValueNumeric") AS "Amount of deaths"
+FROM 
+    "economy" e
+JOIN 
+    "roadtrafficdeaths1" r ON e."country" = r."SpatialDimValueCode"
+JOIN 
+    "country" c ON e."country" = c."code"
+WHERE 
+    e."unemployment" IS NOT NULL
+GROUP BY 
+    e."country", c."name", e."unemployment"
+ORDER BY 
+    "Unemployment" DESC;
+
+
+--18. Beeinfluss die Verfügbarkeit von ??? ob es zu mehr Unfällen kommt die durch 
 select *
 from "desert";
 
@@ -240,7 +272,14 @@ from "desert";
     from "RoadAccidentsSeverity";
 
 
---18. 
+--19.
+
+
+
+--20. 
+
+select*
+from "country";
 
 select*
 from "politics"
@@ -268,102 +307,3 @@ FROM "GlobalTrafficAccidentsandRoadSafety"
 where "Country" = 'United States of America';
 
 
-select "Location"
-from alcohol;
-
-SELECT Country, DeathCount
-FROM roadtrafficdeaths1.sql
-WHERE Year = 2021
-ORDER BY DeathCount DESC
-LIMIT 10;
-
--- Chati Story queries--
-    
---1. Gesamtzahl der geschätzten Verkehrstoten weltweit pro Jahr--
-    SELECT"Period"AS Year, SUM("Value")AS TotalDeaths
-FROM"roadtrafficdeaths1"
-GROUP BY"Period"
-ORDER BY"Year";
-
---2. Zusammenhang zwischen Verkehrstoten und Bildungsgrad--
-SELECT Educational_level AS Education, COUNT(*) AS TotalAccidents
-FROM RoadAccidentsSeverity
-GROUP BY Educational_level
-ORDER BY TotalAccidents DESC;
-
---3. Verkehrstotenrate pro 100.000 Einwohner in den letzten verfügbaren Daten--
-SELECT AVG(Value) AS AvgDeathRatePer100k
-FROM Estimatedroadtrafficdeathrate
-WHERE Period = 2021;
-
---4. Einfluss der Wetterbedingungen auf Unfallhäufigkeit--
-
-SELECT Weather_conditions AS Weather, COUNT(*) AS TotalAccidents
-FROM RoadAccidentsSeverity
-GROUP BY Weather
-ORDER BY TotalAccidents DESC;
-
---5. Verteilung der Verkehrstoten nach Art der Verkehrsteilnehmer--
-SELECT Dim1 AS RoadUserType, SUM(Value) AS TotalDeaths
-FROM deathsvehicle
-GROUP BY RoadUserType
-ORDER BY TotalDeaths DESC;
-
---6. Zusammenhang zwischen Alkohol und Verkehrstoten--
-
-SELECT a.Location AS Country, 
-       r.Value AS TotalDeaths, 
-       a.Value AS AlcoholRelatedDeaths, 
-       ROUND((a.Value::FLOAT / r.Value) * 100, 2) AS AlcoholPercentage
-FROM Alcohol a
-JOIN roadtrafficdeaths1 r ON a.Location = r.Location AND a.Period = r.Period
-WHERE a.Period = 2017
-ORDER BY AlcoholPercentage DESC;
-
---7. Zusammenhang zwischen Unfallursachen und Unfallschwere--
-
-SELECT Cause_of_accident AS Cause, Accident_severity AS Severity, COUNT(*) AS TotalAccidents
-FROM RoadAccidentsSeverity
-GROUP BY Cause, Severity
-ORDER BY TotalAccidents DESC;
-
---8. Korrelation zwischen Verkehrstoten und Bildungsgrad der Fahrer--
-
-SELECT r.Location AS Country, 
-       r.Value AS TotalDeaths, 
-       e.Educational_level AS Education, 
-       COUNT(*) AS Accidents
-FROM roadtrafficdeaths1 r
-JOIN RoadAccidentsSeverity e ON r.Location = e.Area_accident_occured
-GROUP BY Country, TotalDeaths, Education
-ORDER BY TotalDeaths DESC;
-
---9. Vergleich von Unfällen mit schlechter Straßenoberfläche---
-SELECT Road_surface_conditions AS RoadCondition, COUNT(*) AS TotalAccidents
-FROM RoadAccidentsSeverity
-WHERE RoadCondition IN ('Wet', 'Poor', 'Damaged')
-GROUP BY RoadCondition
-ORDER BY TotalAccidents DESC;
-
---10. Vorhersage der Verkehrstoten für das nächste Jahr basierend auf Trends--
-
-SELECT Country, Year, DeathCount,
-       DeathCount + (DeathCount - LAG(DeathCount) OVER (PARTITION BY Country ORDER BY Year)) AS PredictedNextYear
-FROM (
-    SELECT Location AS Country, Period AS Year, SUM(Value) AS DeathCount
-    FROM roadtrafficdeaths1
-    GROUP BY Country, Year
-) AS subquery;
-
---Story Erklärung: Einleitung (Allgemeiner Überblick):Beginne mit den weltweiten Zahlen (Query 1).
--- Gehe auf den Einfluss des Bildungsgrades ein (Query 2).
--- Zeige die durchschnittliche Todesrate pro 100.000 Einwohner (Query 3).
--- Wende dich Wetterbedingungen zu (Query 4).
--- Schließe die Einleitung mit der Verteilung nach Verkehrsteilnehmern (Query 5).
--- Hauptteil (Tiefe Analysen):
-
--- Analysiere Alkohol als Unfallfaktor (Query 6).
--- Zeige Unfallursachen und deren Schweregrad (Query 7).
--- Untersuche die Korrelation zwischen Bildungsgrad und Verkehrstoten (Query 8).
--- Wende dich spezifischen Unfallbedingungen zu, z. B. schlechten Straßen (Query 9).
--- Schließe mit einer Vorhersage der Verkehrstoten basierend auf Trends (Query 10). --
