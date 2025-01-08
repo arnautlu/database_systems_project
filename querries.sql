@@ -241,7 +241,8 @@ WHERE
 GROUP BY 
     e."country", c."name", e."unemployment"
 ORDER BY 
-    "GDP" DESC;
+    "GDP" DESC
+LIMIT 5;
 
 
 --17.  Spielt die Arbeitslosenquote eine Rolle bei der Anzahl der Verkehrstoten?    
