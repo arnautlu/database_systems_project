@@ -1,39 +1,3 @@
--- --Einträge mit FactValueNumeric größer als ein bestimmter Wert (z.B. 1000):
--- SELECT * 
--- FROM roadsafety_db2 
--- WHERE FactValueNumeric > 1000;
-
--- --Einträge mit einem bestimmten Indicator (z.B. "Road Accidents") -> Indikator wählen
--- SELECT * 
--- FROM roadsafety_db2 
--- WHERE Indicator = 'Road Accidents';
-
--- --Anzahl der Einträge pro Location:
--- SELECT Location, COUNT(*) 
--- FROM roadsafety_db2 
--- GROUP BY Location
-
--- --Durchschnittlicher FactValueNumeric pro Location
--- SELECT Location, AVG(FactValueNumeric) 
--- FROM roadsafety_db2 
--- GROUP BY Location;
-
--- --Maximaler FactValueNumeric pro Location:
--- SELECT Location, MAX(FactValueNumeric) 
--- FROM roadsafety_db2 
--- GROUP BY Location
-
--- --Maximaler FactValueNumeric pro Dim1
--- SELECT Dim1, MAX(FactValueNumeric) FROM roadsafety_db2 GROUP BY Dim1;
-
--- select country1, country2
--- from borders
--- where length < 100;
-
--- select
-
-
-
 --Abfragen für das Projekt
 
 --1. Welches Geschlecht ist der gefährlichere Fahrer?
@@ -42,6 +6,7 @@ FROM "RoadAccidentsSeverity"
 WHERE "Sex_of_driver" NOT IN ('Unknown', 'na')
 AND "Sex_of_casualty" NOT IN ('Unknown', 'na')
 GROUP BY "Sex_of_driver", "Sex_of_casualty";
+
 
 --2. Welche Altersgruppe ist am häufigsten in Unfälle verwickelt? Spielt das Bildungslevel dabei ein Rolle?
 SELECT "Educational_level", "Age_band_of_driver", COUNT(*) AS count
@@ -79,6 +44,7 @@ GROUP BY
 ORDER BY 
     accident_count DESC;
 
+
 --5. Welche Fahrzeuge die ... fahren sollte man vermeiden?
 SELECT 
     "Vehicle_movement", 
@@ -91,6 +57,7 @@ GROUP BY
     "Vehicle_movement"
 ORDER BY 
     accident_count DESC;
+
 
 --6 Wie Representativ sind sind 100.00 Menschen bzgl. der gesamten Population? -> hochrrechnen notwendig + ordnen danach in welchen spalten die werte am nächsten liegen
 SELECT 
@@ -115,6 +82,7 @@ FROM "deathsvehicle"
 GROUP BY "Location"
 ORDER BY total_vehicle_deaths DESC;
 
+
 --8. Wo werden am haufugsten Fahrradfahrer verletzt?
 SELECT 
     "Country",
@@ -127,6 +95,7 @@ GROUP BY
     "Country", "Accident Type"
 ORDER BY 
     TotalInjuries DESC;
+
 
 --9. Stehen diese (siehe 8.) in einem Zusammenhang mit Fahrradtoten? Ist es möglcih eine Ration zu schätzen
 SELECT 
@@ -141,6 +110,7 @@ GROUP BY
 ORDER BY 
     TotalFatalities DESC;
 
+
 --10. Welche Masßnahmen mussten am meisten eingesetzt werden?
 SELECT 
     "Road Safety Measures",
@@ -151,6 +121,7 @@ GROUP BY
     "Road Safety Measures"
 ORDER BY 
     UsageCount DESC;
+
 
 --11. Sind Regierungsmitglieder bessere Fahrer?
 SELECT 
@@ -165,6 +136,7 @@ GROUP BY
     OwnershipType
 ORDER BY 
     AccidentCount DESC;
+
 
 --12. In welchen Ländern gibt es die meisten Fahrzeugtote?
 SELECT 
@@ -181,6 +153,7 @@ FROM (
         DeathCount DESC
     LIMIT 5
 ) AS subquery;
+
 
 --13. Welcher Wochentag ist für welche Altersgruppe am gefährlichsten?
 WITH RankedEntries AS (
@@ -205,6 +178,7 @@ WHERE
     rn = 1
 ORDER BY 
     "Age_band_of_driver";
+    
 
 --14. In welchen Gebieten einer Stadt werden die meisten Unfälle verursacht?
 SELECT 
@@ -221,11 +195,47 @@ ORDER BY
 LIMIT 3;
 
 
+--15. Unter welcher Regierng(-sform) sterben mehr Leute durch Verkehrunfälle?
+SELECT 
+    p."government",
+    SUM(r."FactValueNumeric") AS TotalRoadTrafficDeaths
+FROM 
+    "politics" p
+JOIN 
+    "country" c ON p."country" = c."code"
+JOIN 
+    "roadtrafficdeaths1" r ON c."code" = r."SpatialDimValueCode"
+GROUP BY 
+    p."government"
+ORDER BY 
+    TotalRoadTrafficDeaths DESC
+LIMIT 10;
 
 
+--16. Spielt die Wirtschaft eines Landes eine Rolle bei der Anzahl der Verkehrstoten?
+--nur GDP oder vllt. Inflation/Arbeitslosenquote/etc.
+select *
+from "economy";
+
+
+--17. Beeinfluss die Verfügbarkeit von ??? ob es zu mehr Unfällen kommt die durch 
+select *
+from "desert";
+
+    --Road_surface_type könnte interessant sein
+    select *
+    from "RoadAccidentsSeverity";
+
+
+--18. 
 
 select*
-from "countrypops";
+from "politics"
+LIMIT 1;
+
+select *
+from"roadtrafficdeaths1"
+LIMIT 1;
 
 
 
